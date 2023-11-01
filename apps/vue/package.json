@@ -1,0 +1,12 @@
+{
+  "name": "vue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "vue": "^3.3.7"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
