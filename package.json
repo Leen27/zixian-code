@@ -1,0 +1,18 @@
+{
+  "name": "zixian-code",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vitepress dev apps/vue",
+    "docs:build": "vitepress build apps/vue",
+    "docs:preview": "vitepress preview apps/vue"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vitepress": "1.0.0-rc.24"
+  }
+}
