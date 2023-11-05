@@ -14,5 +14,8 @@
     "vue:dev": "vitepress dev apps/vue",
     "vue:build": "vitepress build apps/vue",
     "vue:preview": "vitepress preview apps/vue"
+  },
+  "dependencies": {
+    "pixi.js": "^7.3.2"
   }
 }
