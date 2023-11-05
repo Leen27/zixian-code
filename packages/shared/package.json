@@ -1,0 +1,7 @@
+{
+  "name": "vue-core-shared",
+  "version": "3.3.7",
+  "main": "src/index.ts",
+ 
+  "homepage": "https://github.com/vuejs/core/tree/main/packages/shared#readme"
+}

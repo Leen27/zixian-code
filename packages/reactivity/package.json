@@ -1,0 +1,8 @@
+{
+  "name": "vue-core-reactivity",
+  "version": "3.3.7",
+  "main": "src/index.ts",
+    "dependencies": {
+    "vue-core-shared": "workspace:*"
+  }
+}
