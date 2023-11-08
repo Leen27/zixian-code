@@ -3,6 +3,7 @@
   "version": "3.3.7",
   "main": "src/index.ts",
     "dependencies": {
-    "vue-core-shared": "workspace:*"
-  }
+      "zixian": "workspace:*",
+      "vue-core-shared": "workspace:*"
+    }
 }

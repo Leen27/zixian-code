@@ -18,6 +18,7 @@ import {
 import type { ShallowReactiveMarker } from './reactive'
 import { CollectionTypes } from './collectionHandlers'
 import { createDep, Dep } from './dep'
+import { zixian } from 'zixian'
 
 declare const RefSymbol: unique symbol
 export declare const RawSymbol: unique symbol
@@ -146,6 +147,7 @@ class RefImpl<T> {
     this._value = __v_isShallow ? value : toReactive(value)
 
     console.log(this._rawValue, this._value, '@@@')
+    zixian()
   }
 
   get value() {

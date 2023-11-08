@@ -1,8 +1,15 @@
 {
   "name": "zixian",
-  "private": true,
-  "version": "0.0.0",
   "type": "module",
+  "files": ["dist"],
+  "main": "./dist/zixian.umd.cjs",
+  "module": "./dist/zixian.js",
+  "exports": {
+    ".": {
+      "import": "./dist/zixian.js",
+      "require": "./dist/zixian.umd.cjs"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

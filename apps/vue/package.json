@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "vue": "^3.3.7",
+    "zixian": "workspace:*",
     "vue-core-reactivity": "workspace:*"
   },
   "keywords": [],

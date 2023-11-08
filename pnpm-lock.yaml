@@ -27,12 +27,18 @@ importers:
       vue-core-reactivity:
         specifier: workspace:*
         version: link:../../packages-vue/reactivity
+      zixian:
+        specifier: workspace:*
+        version: link:../../packages/zixian
 
   packages-vue/reactivity:
     dependencies:
       vue-core-shared:
         specifier: workspace:*
         version: link:../shared
+      zixian:
+        specifier: workspace:*
+        version: link:../../packages/zixian
 
   packages-vue/shared: {}
 
