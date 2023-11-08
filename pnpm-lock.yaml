@@ -1,4 +1,4 @@
-lockfileVersion: '6.1'
+lockfileVersion: '6.0'
 
 settings:
   autoInstallPeers: true
@@ -24,6 +24,9 @@ importers:
       vue:
         specifier: ^3.3.7
         version: 3.3.7
+      vue-core-reactivity:
+        specifier: workspace:*
+        version: link:../../packages/reactivity
 
   packages/reactivity:
     dependencies:

@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "vue": "^3.3.7"
+    "vue": "^3.3.7",
+    "vue-core-reactivity": "workspace:*"
   },
   "keywords": [],
   "author": "",
