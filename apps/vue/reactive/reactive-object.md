@@ -3,10 +3,11 @@
 ```js
 import { ref } from 'vue-core-reactivity'
 
-const A0 = ref(0)
+ref(0)
+// const A0 = ref(0)
 
 // triggers the effect
-A0.value = 2
+// A0.value = 2
 ```
 
 <script setup>

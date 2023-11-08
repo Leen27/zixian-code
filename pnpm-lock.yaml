@@ -26,15 +26,24 @@ importers:
         version: 3.3.7
       vue-core-reactivity:
         specifier: workspace:*
-        version: link:../../packages/reactivity
+        version: link:../../packages-vue/reactivity
 
-  packages/reactivity:
+  packages-vue/reactivity:
     dependencies:
       vue-core-shared:
         specifier: workspace:*
         version: link:../shared
 
-  packages/shared: {}
+  packages-vue/shared: {}
+
+  packages/zixian:
+    devDependencies:
+      typescript:
+        specifier: ^5.0.2
+        version: 5.2.2
+      vite:
+        specifier: ^4.4.5
+        version: 4.5.0
 
 packages:
 
@@ -1272,6 +1281,12 @@ packages:
   /to-fast-properties@2.0.0:
     resolution: {integrity: sha512-/OaKK0xYrs3DmxRYqL/yDc+FxFUVYhDlXMhRmv3z915w2HF1tnN1omB354j8VUGO/hbRzyD6Y3sA7v7GS/ceog==}
     engines: {node: '>=4'}
+
+  /typescript@5.2.2:
+    resolution: {integrity: sha512-mI4WrpHsbCIcwT9cF4FZvr80QUeKvsUsUvKDoR+X/7XHQH98xYD8YHZg7ANtz2GtZt/CBq2QJ0thkGJMHfqc1w==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+    dev: true
 
   /url@0.11.3:
     resolution: {integrity: sha512-6hxOLGfZASQK/cijlZnZJTq8OXAkt/3YGfQX45vvMYXpZoo8NdWZcY73K108Jf759lS1Bv/8wXnHDTSz17dSRw==}
