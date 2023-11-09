@@ -1,13 +1,9 @@
-# object
+# Ref 
 
 ```js
-import { ref } from 'vue-core-reactivity'
+import { ref } from 'vue'
 
 ref(0)
-// const A0 = ref(0)
-
-// triggers the effect
-// A0.value = 2
 ```
 
 <script setup>
