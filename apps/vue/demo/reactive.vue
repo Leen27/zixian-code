@@ -1,11 +1,12 @@
 <template>
-    A0: {{ A0 }}
+    1
 </template>
-<script setup>
-import { ref } from 'vue-core-reactivity'
+<script lang="ts" setup>
+import { ref, reactive, effect } from 'vue-core-reactivity'
 
-const A0 = ref(0)
-
-// triggers the effect
-A0.value = 2
+const a = ref(0)
+const b = ref(0)
+effect(() => b.value = a.value + 1)
+a.value = 2
+console.log(b.value)
 </script>

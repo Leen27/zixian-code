@@ -16,7 +16,21 @@ import { ComputedRefImpl } from './computed'
 // which maintains a Set of subscribers, but we simply store them as
 // raw Sets to reduce memory overhead.
 type KeyToDepMap = Map<any, Dep>
-const targetMap = new WeakMap<object, KeyToDepMap>()
+
+class zxWeakMap<K extends WeakKey, V> extends WeakMap {
+    /**
+     * Adds a new element with a specified key and value.
+     * @param key Must be an object or symbol.
+     */
+    set(key: K, value: V) {
+      super.set(key, value)
+
+      console.log(this, 'zxWeakMap')
+      return this
+    };
+}
+
+const targetMap = new zxWeakMap<object, KeyToDepMap>()
 
 // The number of effects currently being tracked recursively.
 let effectTrackDepth = 0
@@ -191,6 +205,7 @@ export function effect<T = any>(
     if (options.scope) recordEffectScope(_effect, options.scope)
   }
   if (!options || !options.lazy) {
+    console.log('run _effect fn')
     _effect.run()
   }
   const runner = _effect.run.bind(_effect) as ReactiveEffectRunner
@@ -248,6 +263,7 @@ export function track(target: object, type: TrackOpTypes, key: unknown) {
   if (shouldTrack && activeEffect) {
     let depsMap = targetMap.get(target)
     if (!depsMap) {
+      console.log('trak')
       targetMap.set(target, (depsMap = new Map()))
     }
     let dep = depsMap.get(key)

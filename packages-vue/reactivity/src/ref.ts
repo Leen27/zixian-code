@@ -151,13 +151,11 @@ class RefImpl<T> {
   }
 
   get value() {
-    console.log('get')
     trackRefValue(this)
     return this._value
   }
 
   set value(newVal) {
-    console.log('set')
     const useDirectValue =
       this.__v_isShallow || isShallow(newVal) || isReadonly(newVal)
     newVal = useDirectValue ? newVal : toRaw(newVal)
