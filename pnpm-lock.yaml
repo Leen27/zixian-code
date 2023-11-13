@@ -43,6 +43,10 @@ importers:
   packages-vue/shared: {}
 
   packages/zixian:
+    dependencies:
+      pixi.js:
+        specifier: ^7.3.2
+        version: 7.3.2(@pixi/utils@7.3.2)
     devDependencies:
       typescript:
         specifier: ^5.0.2

@@ -1,7 +1,9 @@
 {
   "name": "zixian",
   "type": "module",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "main": "./dist/zixian.umd.cjs",
   "module": "./dist/zixian.js",
   "exports": {
@@ -18,5 +20,8 @@
   "devDependencies": {
     "typescript": "^5.0.2",
     "vite": "^4.4.5"
+  },
+  "dependencies": {
+    "pixi.js": "^7.3.2"
   }
 }
