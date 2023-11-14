@@ -1,11 +1,11 @@
 import * as PIXI from "pixi.js";
 
 export const createPlayer = (domId: string | HTMLElement) => {
-  const dom = typeof domId == 'string' ? document.body.querySelector(domId) : domId;
+  const dom: HTMLElement | null = typeof domId == 'string' ? document.body.querySelector(domId) : domId;
 
   if (!dom) return;
 
-  const app = new PIXI.Application({ background: "#1099bb", resizeTo: window });
+  const app = new PIXI.Application({ background: "#1099bb", resizeTo: dom });
 
   dom.appendChild(app.view as any);
 

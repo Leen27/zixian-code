@@ -1,5 +1,5 @@
 <template>
-    <div ref="zixianRef" />
+    <div ref="zixianRef" class="demo" />
 </template>
 <script lang="ts" setup>
 import { ref, reactive, effect } from 'vue-core-reactivity'
@@ -18,3 +18,9 @@ onMounted(() => {
     createPlayer(zixianRef.value)
 })
 </script>
+<style>
+.demo {
+    width: 100%;
+    height: 400px;
+}
+</style>

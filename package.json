@@ -14,7 +14,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "vue:dev": "vitepress dev apps/vue",
     "vue:build": "vitepress build apps/vue",
-    "vue:preview": "vitepress preview apps/vue"
+    "vue:preview": "vitepress preview apps/vue",
+    "zixian:build": "pnpm --filter zixian run build"
   },
   "dependencies": {
     "pixi.js": "^7.3.2"
