@@ -1,7 +1,7 @@
 import * as PIXI from "pixi.js";
 
-export const zixian = (domId: string) => {
-  const dom = document.body.querySelector(domId);
+export const createPlayer = (domId: string | HTMLElement) => {
+  const dom = typeof domId == 'string' ? document.body.querySelector(domId) : domId;
 
   if (!dom) return;
 
@@ -41,3 +41,5 @@ export const zixian = (domId: string) => {
     container.rotation -= 0.01 * delta;
   });
 };
+
+export const zixian = () => {}

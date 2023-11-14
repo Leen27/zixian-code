@@ -1,0 +1,15 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+      "rootDir": "lib",
+      "declaration": true,
+      "emitDeclarationOnly": true,
+      "stripInternal": true,
+      "noEmit": false,
+      "outDir": "dist",
+    },
+    "include": ["lib"],
+    "exclude": [
+      "src"
+    ]
+  }
