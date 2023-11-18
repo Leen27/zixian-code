@@ -1,24 +1,24 @@
 import './style.css'
-import typescriptLogo from './typescript.svg'
-import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.ts'
+import { createPlayer } from '../lib/main.ts'
+import * as core from '@theatre/core'
+import studio from '@theatre/studio'
 
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://www.typescriptlang.org/" target="_blank">
-      <img src="${typescriptLogo}" class="logo vanilla" alt="TypeScript logo" />
-    </a>
-    <h1>Vite + TypeScript</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite and TypeScript logos to learn more
-    </p>
-  </div>
-`
+(() => {
+  const appDom = document.querySelector<HTMLDivElement>('#app')!
 
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+  studio.initialize()
+  const project = core.getProject('HTML Animation Tutorial')
+  const sheet = project.sheet('Sheet 1')
+  const obj = sheet.object('Heading 1', {
+    y: 0, // you can use just a simple default value
+    opacity: core.types.number(1, { range: [0, 1] }), // or use a type constructor to customize
+  })
+  
+  if(!appDom) return
+  const zixian = createPlayer(appDom)
+  
+  zixian?.renderer?.addNode()
+  setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+})()
+

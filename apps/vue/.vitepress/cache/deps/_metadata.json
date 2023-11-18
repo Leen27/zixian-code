@@ -1,38 +1,53 @@
 {
-  "hash": "d2cb960b",
-  "browserHash": "2886bde1",
+  "hash": "a326e9ca",
+  "browserHash": "d2ddf7cc",
   "optimized": {
     "vue": {
       "src": "../../../../../node_modules/.pnpm/vue@3.3.7/node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "6e024798",
+      "fileHash": "60e94682",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../../../node_modules/.pnpm/@vue+devtools-api@6.5.1/node_modules/@vue/devtools-api/lib/esm/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "173fc16c",
+      "fileHash": "bbd09d01",
       "needsInterop": false
     },
     "@theme/index": {
       "src": "../../../../../node_modules/.pnpm/vitepress@1.0.0-rc.24_@algolia+client-search@4.20.0_search-insights@2.9.0/node_modules/vitepress/dist/client/theme-default/index.js",
       "file": "@theme_index.js",
-      "fileHash": "32d02fd6",
+      "fileHash": "f44b0d89",
       "needsInterop": false
     },
     "pixi.js": {
       "src": "../../../../../node_modules/.pnpm/pixi.js@7.3.2_@pixi+utils@7.3.2/node_modules/pixi.js/lib/index.mjs",
       "file": "pixi__js.js",
-      "fileHash": "e8876635",
+      "fileHash": "49907a62",
       "needsInterop": false
+    },
+    "@theatre/studio": {
+      "src": "../../../../../node_modules/.pnpm/@theatre+studio@0.7.0_@theatre+core@0.7.0/node_modules/@theatre/studio/dist/index.js",
+      "file": "@theatre_studio.js",
+      "fileHash": "c96364db",
+      "needsInterop": true
+    },
+    "@theatre/core": {
+      "src": "../../../../../node_modules/.pnpm/@theatre+core@0.7.0/node_modules/@theatre/core/dist/index.js",
+      "file": "@theatre_core.js",
+      "fileHash": "e410719a",
+      "needsInterop": true
     }
   },
   "chunks": {
+    "chunk-PHF7LST3": {
+      "file": "chunk-PHF7LST3.js"
+    },
     "chunk-EC7GVSDM": {
       "file": "chunk-EC7GVSDM.js"
     },
-    "chunk-5WWUZCGV": {
-      "file": "chunk-5WWUZCGV.js"
+    "chunk-HM4MQYWN": {
+      "file": "chunk-HM4MQYWN.js"
     }
   }
 }

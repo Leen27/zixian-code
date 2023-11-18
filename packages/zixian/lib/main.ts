@@ -1,18 +1,34 @@
 import * as PIXI from "pixi.js";
 
-class Zixian {
-  _domContainer: HTMLElement
-  _render: PIXI.Application
+export class Zixian {
+  _domContainer: HTMLElement | null = null
+  renderer: Renderer | null = null
   constructor(dom: HTMLElement) {
-    this._createRender(dom)
+    this.renderer = new Renderer(dom) 
   }
+}
 
-  _createRender(dom: HTMLElement) {
+export class Renderer {
+  _app: PIXI.Application | null = null
+
+  constructor(dom: HTMLElement) {
     const app = new PIXI.Application({ background: "#1099bb", resizeTo: dom });
     dom.appendChild(app.view as any);
     const container = new PIXI.Container();
     app.stage.addChild(container);
-    this._render = app
+    this._app = app
+  }
+
+  addNode() {
+    const graphics = new PIXI.Graphics()
+
+    // Rectangle + line style 1
+    graphics.lineStyle(2, 0xFEEB77, 1);
+    graphics.beginFill(0x650A5A);
+    graphics.drawRect(200, 50, 100, 100);
+    graphics.endFill();
+
+    this._app?.stage.addChild(graphics)
   }
 }
 

@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "@theatre/core": "^0.7.0",
+    "@theatre/studio": "^0.7.0",
     "vue": "^3.3.7",
-    "zixian": "workspace:*",
-    "vue-core-reactivity": "workspace:*"
+    "vue-core-reactivity": "workspace:*",
+    "zixian": "workspace:*"
   },
   "keywords": [],
   "author": "",

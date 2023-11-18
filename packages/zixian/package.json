@@ -25,5 +25,9 @@
   },
   "peerDependencies": {
     "pixi.js": "^7.3.2"
+  },
+  "dependencies": {
+    "@theatre/core": "^0.7.0",
+    "@theatre/studio": "^0.7.0"
   }
 }

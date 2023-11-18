@@ -21,6 +21,12 @@ importers:
 
   apps/vue:
     dependencies:
+      '@theatre/core':
+        specifier: ^0.7.0
+        version: 0.7.0
+      '@theatre/studio':
+        specifier: ^0.7.0
+        version: 0.7.0(@theatre/core@0.7.0)
       vue:
         specifier: ^3.3.7
         version: 3.3.7
@@ -43,6 +49,13 @@ importers:
   packages-vue/shared: {}
 
   packages/zixian:
+    dependencies:
+      '@theatre/core':
+        specifier: ^0.7.0
+        version: 0.7.0
+      '@theatre/studio':
+        specifier: ^0.7.0
+        version: 0.7.0(@theatre/core@0.7.0)
     devDependencies:
       pixi.js:
         specifier: ^7.3.2
@@ -774,6 +787,27 @@ packages:
       eventemitter3: 4.0.7
       url: 0.11.3
 
+  /@theatre/core@0.7.0:
+    resolution: {integrity: sha512-CXRUxOaKQtb4biQa6+I6PW8wPsFj9NsZgr7VdosSB20WxlanQ8/ZR0xH/A3A3oCHdCXKaZxQlNcEOeByk4Yf/g==}
+    dependencies:
+      '@theatre/dataverse': 0.7.0
+    dev: false
+
+  /@theatre/dataverse@0.7.0:
+    resolution: {integrity: sha512-NbhTZYOqETp9g0II7R9GypErnZ47TmoT6yzyQ0vGfgVLD1a+dsPG+CLvvyzssbGG/gfDDoMzkXNwWJAwNkqFvQ==}
+    dependencies:
+      lodash-es: 4.17.21
+    dev: false
+
+  /@theatre/studio@0.7.0(@theatre/core@0.7.0):
+    resolution: {integrity: sha512-aBkDUBmvajWaha5dd/6Fs7sHCDMQKqVlLX9SDGsMJkKoCEb9dzwD5F5FOZCWt+OhbbwIbP9dYR6S4n6abyDkBQ==}
+    peerDependencies:
+      '@theatre/core': '*'
+    dependencies:
+      '@theatre/core': 0.7.0
+      '@theatre/dataverse': 0.7.0
+    dev: false
+
   /@types/css-font-loading-module@0.0.7:
     resolution: {integrity: sha512-nl09VhutdjINdWyXxHWN/w9zlNCfr60JUqJbd24YXUuCwgeL0TpFSdElCwb6cxfB6ybE19Gjj4g0jsgkXxKv1Q==}
 
@@ -1100,6 +1134,10 @@ packages:
   /jsonc-parser@3.2.0:
     resolution: {integrity: sha512-gfFQZrcTc8CnKXp6Y4/CBT3fTc0OVuDofpre4aEeEpSBPV5X5v4+Vmx+8snU7RLPrNHPKSgLxGo9YuQzz20o+w==}
     dev: true
+
+  /lodash-es@4.17.21:
+    resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==}
+    dev: false
 
   /magic-string@0.30.5:
     resolution: {integrity: sha512-7xlpfBaQaP/T6Vh8MO/EqXSW5En6INHEvEXQiuff7Gku0PWjU3uf6w/j9o7O+SpB5fOAkrI5HeoNgwjEO0pFsA==}
