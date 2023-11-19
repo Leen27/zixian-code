@@ -3,16 +3,24 @@ import * as PIXI from "pixi.js";
 export class Zixian {
   _domContainer: HTMLElement | null = null
   renderer: Renderer | null = null
-  constructor(dom: HTMLElement) {
-    this.renderer = new Renderer(dom) 
+  constructor(dom: HTMLElement, config?: RenderConfig) {
+    this.renderer = new Renderer(dom, config) 
   }
+}
+
+type RenderConfig = {
+  background: string
 }
 
 export class Renderer {
   _app: PIXI.Application | null = null
 
-  constructor(dom: HTMLElement) {
-    const app = new PIXI.Application({ background: "#1099bb", resizeTo: dom });
+  constructor(dom: HTMLElement, config?: RenderConfig) {
+    const {
+      background = "#1099bb"
+    } = config || {}
+
+    const app = new PIXI.Application({ background, resizeTo: dom });
     dom.appendChild(app.view as any);
     const container = new PIXI.Container();
     app.stage.addChild(container);
@@ -32,10 +40,10 @@ export class Renderer {
   }
 }
 
-export const createPlayer = (domId: string | HTMLElement) => {
+export const createPlayer = (domId: string | HTMLElement, config?: RenderConfig) => {
   const dom: HTMLElement | null = typeof domId == 'string' ? document.body.querySelector(domId) : domId;
   if (!dom) return;
-  return new Zixian(dom)
+  return new Zixian(dom, config)
 };
 
 export const zixian = () => {}

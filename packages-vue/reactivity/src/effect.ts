@@ -96,7 +96,7 @@ export class ReactiveEffect<T = any> {
   ) {
     recordEffectScope(this, scope)
   }
-
+ 
   run() {
     if (!this.active) {
       return this.fn()
@@ -204,7 +204,7 @@ export function effect<T = any>(
     extend(_effect, options)
     if (options.scope) recordEffectScope(_effect, options.scope)
   }
-  if (!options || !options.lazy) {
+  if (!options || !options.lazy) { 
     console.log('run _effect fn')
     _effect.run()
   }

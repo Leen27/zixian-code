@@ -1,4 +1,18 @@
 #app {
   width: 100%;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#stage {
+  width: 100%;
+  height: 50vh;
+  background-color: black;
+}
+
+#beind-scene {
+  width: 100%;
+  height: 50vh;
+  background-color: beige;
 }
