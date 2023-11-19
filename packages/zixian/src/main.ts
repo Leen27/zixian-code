@@ -1,6 +1,5 @@
 import './style.css'
-import { setupCounter } from './counter.ts'
-import { createPlayer } from '../lib/main.ts'
+import { createZixian } from '../lib/main.ts'
 import * as core from '@theatre/core'
 import studio from '@theatre/studio'
 
@@ -14,22 +13,40 @@ import studio from '@theatre/studio'
   appDom.appendChild(behindSceneDom)
   
   if(!appDom) return
-  const stage = createPlayer(stageDom)
-  stage?.renderer?.addNode()
-  const behindScene = createPlayer(behindSceneDom, {
+  const stage = createZixian(stageDom)
+  const node = stage?.renderer?.addNode()
+  const behindScene = createZixian(behindSceneDom, {
     background: 'white'
   })
 
   studio.initialize()
   const stageProject = {
     project: null,
-    sheets: []
-  } as any
+    sheets: {}
+  } as {
+    project: core.IProject | null,
+    sheets: Record<string, core.ISheet>
+  }
 
   stageProject.project = core.getProject('stage')
-  stageProject.sheets.push(stageProject.project.sheet('Sheet 1').object('Ref', {
-    y: 0, // you can use just a simple default value
-    opacity: core.types.number(1, { range: [0, 1] }), // or use a type constructor to customize
-  }))  
-})()
+  stageProject.sheets['Sheet 1'] = stageProject.project.sheet('Sheet 1') as any
+  const nodeObj = stageProject.sheets['Sheet 1'].object('Node', {
+    position: {
+      x: 0,
+      y: 0
+    }
+  })
 
+  nodeObj.onValuesChange(({ position }) => {
+    if (!node) return
+    node.x = position.x
+    node.y = position.y
+  })
+  
+  const behindProject = {
+    project: null,
+    sheets: []
+  } as any
+  stageProject.project = core.getProject('behind')
+
+})()

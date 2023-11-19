@@ -1,0 +1,86 @@
+{
+  "sheetsById": {
+    "Sheet 1": {
+      "staticOverrides": {
+        "byObject": {
+          "Node": {
+            "x": 311,
+            "position": {
+              "x": 400,
+              "y": 31
+            }
+          }
+        }
+      },
+      "sequence": {
+        "subUnitsPerUnit": 30,
+        "length": 10,
+        "type": "PositionalSequence",
+        "tracksByObject": {
+          "Node": {
+            "trackData": {
+              "It5wKSae-l": {
+                "type": "BasicKeyframedTrack",
+                "__debugName": "Node:[\"position\",\"x\"]",
+                "keyframes": [
+                  {
+                    "id": "SP4mXXdTgg",
+                    "position": 0.433,
+                    "connectedRight": true,
+                    "handles": [
+                      0.5,
+                      1,
+                      0.5,
+                      0
+                    ],
+                    "type": "bezier",
+                    "value": 400
+                  },
+                  {
+                    "id": "tYYiNyGVLi",
+                    "position": 3.6,
+                    "connectedRight": true,
+                    "handles": [
+                      0.5,
+                      1,
+                      0.5,
+                      0
+                    ],
+                    "type": "bezier",
+                    "value": 81
+                  },
+                  {
+                    "id": "VxwhqXWi9t",
+                    "position": 5.967,
+                    "connectedRight": true,
+                    "handles": [
+                      0.5,
+                      1,
+                      0.5,
+                      0
+                    ],
+                    "type": "bezier",
+                    "value": 336
+                  }
+                ]
+              },
+              "8XfPHjBCUD": {
+                "type": "BasicKeyframedTrack",
+                "__debugName": "Node:[\"position\",\"y\"]",
+                "keyframes": []
+              }
+            },
+            "trackIdByPropPath": {
+              "[\"position\",\"x\"]": "It5wKSae-l",
+              "[\"position\",\"y\"]": "8XfPHjBCUD"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitionVersion": "0.4.0",
+  "revisionHistory": [
+    "I2CaVH8xf2D1jGCf"
+  ]
+}

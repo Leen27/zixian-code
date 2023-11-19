@@ -1,4 +1,5 @@
 import * as PIXI from "pixi.js";
+import * as Theatre from '@theatre/core'
 
 export class Zixian {
   _domContainer: HTMLElement | null = null
@@ -27,20 +28,60 @@ export class Renderer {
     this._app = app
   }
 
-  addNode() {
+  addNode(options?: {
+    position: {
+      x: number,
+      y: number
+    }
+  }) {
     const graphics = new PIXI.Graphics()
-
-    // Rectangle + line style 1
     graphics.lineStyle(2, 0xFEEB77, 1);
     graphics.beginFill(0x650A5A);
-    graphics.drawRect(200, 50, 100, 100);
+    graphics.drawRect(0, 0, 100, 100);
     graphics.endFill();
-
     this._app?.stage.addChild(graphics)
+    graphics.position = options?.position || { x: 0, y: 0 }
+    return graphics
   }
 }
 
-export const createPlayer = (domId: string | HTMLElement, config?: RenderConfig) => {
+export function createNode(renderer: Renderer) {
+  return renderer.addNode()
+}
+
+class Drama<T> {
+  private _project: Theatre.IProject | null = null
+  constructor(
+    state: any) {
+    this._project = Theatre.getProject('drama', {
+      state,
+    })
+  }
+
+  play(sheetName: string, objectName: string, data: T, handleValueChange: (data: T) => void) {
+    console.log('play')
+    if (!this._project) return
+    console.log( this._project)
+
+    const sheet = this._project.sheet(sheetName)
+    const obj = sheet.object(objectName, data as T & Theatre.UnknownShorthandCompoundProps)
+
+    console.log(sheet, obj)
+    // animations
+    handleValueChange && obj.onValuesChange(handleValueChange as Parameters<Theatre.ISheetObject["onValuesChange"]>[0])
+
+    // wait for project to be ready
+    this._project.ready.then(() => {
+      sheet.sequence.play({ iterationCount: Infinity })
+    })
+  }
+}
+
+export function createDrama<T>(state: any) {
+  return new Drama<T>(state)
+}
+
+export const createZixian = (domId: string | HTMLElement, config?: RenderConfig) => {
   const dom: HTMLElement | null = typeof domId == 'string' ? document.body.querySelector(domId) : domId;
   if (!dom) return;
   return new Zixian(dom, config)
