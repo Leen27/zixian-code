@@ -5,19 +5,10 @@ import studio from '@theatre/studio'
 
 (() => {
   const appDom = document.querySelector<HTMLDivElement>('#app')!
-  const stageDom = document.createElement('div')
-  stageDom.setAttribute('id', 'stage')
-  const behindSceneDom = document.createElement('div')
-  behindSceneDom.setAttribute('id', 'beind-scene')
-  appDom.appendChild(stageDom)
-  appDom.appendChild(behindSceneDom)
-  
+
   if(!appDom) return
-  const stage = createZixian(stageDom)
+  const stage = createZixian(appDom)
   const node = stage?.renderer?.addNode()
-  const behindScene = createZixian(behindSceneDom, {
-    background: 'white'
-  })
 
   studio.initialize()
   const stageProject = {
@@ -42,11 +33,4 @@ import studio from '@theatre/studio'
     node.x = position.x
     node.y = position.y
   })
-  
-  const behindProject = {
-    project: null,
-    sheets: []
-  } as any
-  stageProject.project = core.getProject('behind')
-
 })()

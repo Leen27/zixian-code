@@ -35,7 +35,7 @@ onMounted(() => {
         }
     }, (obj) => {
         node.x = obj.position.x
-        node.y = obj.position.y
+        node.y = obj.position.x
         // console.log(obj.position, 'obj.position')
     })
 })
@@ -43,6 +43,6 @@ onMounted(() => {
 <style>
 .demo {
     width: 100%;
-    height: 400px;
+    height: 600px;
 }
 </style>

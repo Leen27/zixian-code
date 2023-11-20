@@ -1,5 +1,7 @@
 import * as PIXI from "pixi.js";
 import * as Theatre from '@theatre/core'
+import { createGUI } from './gui'
+import type { GUI } from './gui'
 
 export class Zixian {
   _domContainer: HTMLElement | null = null
@@ -15,8 +17,12 @@ type RenderConfig = {
 
 export class Renderer {
   _app: PIXI.Application | null = null
+  _dom: HTMLElement | null = null
+  gui: GUI
 
   constructor(dom: HTMLElement, config?: RenderConfig) {
+    this._dom = dom
+
     const {
       background = "#1099bb"
     } = config || {}
@@ -26,6 +32,8 @@ export class Renderer {
     const container = new PIXI.Container();
     app.stage.addChild(container);
     this._app = app
+
+    this.gui = createGUI(this)
   }
 
   addNode(options?: {
@@ -39,7 +47,7 @@ export class Renderer {
     graphics.beginFill(0x650A5A);
     graphics.drawRect(0, 0, 100, 100);
     graphics.endFill();
-    this._app?.stage.addChild(graphics)
+    this.gui._stagePanel?.addChild(graphics)
     graphics.position = options?.position || { x: 0, y: 0 }
     return graphics
   }
