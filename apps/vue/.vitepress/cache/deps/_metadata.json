@@ -1,53 +1,38 @@
 {
-  "hash": "a326e9ca",
-  "browserHash": "d2ddf7cc",
+  "hash": "1db9d520",
+  "browserHash": "2d444bbf",
   "optimized": {
     "vue": {
       "src": "../../../../../node_modules/.pnpm/vue@3.3.7/node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "60e94682",
+      "fileHash": "a72bb3d5",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../../../node_modules/.pnpm/@vue+devtools-api@6.5.1/node_modules/@vue/devtools-api/lib/esm/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "bbd09d01",
+      "fileHash": "31d4a527",
       "needsInterop": false
     },
     "@theme/index": {
       "src": "../../../../../node_modules/.pnpm/vitepress@1.0.0-rc.24_@algolia+client-search@4.20.0_search-insights@2.9.0/node_modules/vitepress/dist/client/theme-default/index.js",
       "file": "@theme_index.js",
-      "fileHash": "f44b0d89",
+      "fileHash": "41c72724",
       "needsInterop": false
     },
     "pixi.js": {
       "src": "../../../../../node_modules/.pnpm/pixi.js@7.3.2_@pixi+utils@7.3.2/node_modules/pixi.js/lib/index.mjs",
       "file": "pixi__js.js",
-      "fileHash": "49907a62",
+      "fileHash": "6b9d4640",
       "needsInterop": false
-    },
-    "@theatre/studio": {
-      "src": "../../../../../node_modules/.pnpm/@theatre+studio@0.7.0_@theatre+core@0.7.0/node_modules/@theatre/studio/dist/index.js",
-      "file": "@theatre_studio.js",
-      "fileHash": "c96364db",
-      "needsInterop": true
-    },
-    "@theatre/core": {
-      "src": "../../../../../node_modules/.pnpm/@theatre+core@0.7.0/node_modules/@theatre/core/dist/index.js",
-      "file": "@theatre_core.js",
-      "fileHash": "e410719a",
-      "needsInterop": true
     }
   },
   "chunks": {
-    "chunk-PHF7LST3": {
-      "file": "chunk-PHF7LST3.js"
-    },
     "chunk-EC7GVSDM": {
       "file": "chunk-EC7GVSDM.js"
     },
-    "chunk-HM4MQYWN": {
-      "file": "chunk-HM4MQYWN.js"
+    "chunk-5WWUZCGV": {
+      "file": "chunk-5WWUZCGV.js"
     }
   }
 }
