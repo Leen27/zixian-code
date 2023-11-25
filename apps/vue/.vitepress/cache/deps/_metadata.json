@@ -1,30 +1,36 @@
 {
-  "hash": "1db9d520",
-  "browserHash": "2d444bbf",
+  "hash": "28c0d639",
+  "browserHash": "5a23cbaa",
   "optimized": {
     "vue": {
       "src": "../../../../../node_modules/.pnpm/vue@3.3.7/node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "a72bb3d5",
+      "fileHash": "3518aa3f",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../../../node_modules/.pnpm/@vue+devtools-api@6.5.1/node_modules/@vue/devtools-api/lib/esm/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "31d4a527",
+      "fileHash": "cc95b45d",
       "needsInterop": false
     },
     "@theme/index": {
       "src": "../../../../../node_modules/.pnpm/vitepress@1.0.0-rc.24_@algolia+client-search@4.20.0_search-insights@2.9.0/node_modules/vitepress/dist/client/theme-default/index.js",
       "file": "@theme_index.js",
-      "fileHash": "41c72724",
+      "fileHash": "558d1655",
       "needsInterop": false
     },
     "pixi.js": {
       "src": "../../../../../node_modules/.pnpm/pixi.js@7.3.2_@pixi+utils@7.3.2/node_modules/pixi.js/lib/index.mjs",
       "file": "pixi__js.js",
-      "fileHash": "6b9d4640",
+      "fileHash": "9ebc9110",
       "needsInterop": false
+    },
+    "@theatre/core": {
+      "src": "../../../../../node_modules/.pnpm/@theatre+core@0.7.0/node_modules/@theatre/core/dist/index.js",
+      "file": "@theatre_core.js",
+      "fileHash": "ee863686",
+      "needsInterop": true
     }
   },
   "chunks": {
