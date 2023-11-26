@@ -16,8 +16,5 @@
     "vue:build": "vitepress build apps/vue",
     "vue:preview": "vitepress preview apps/vue",
     "zixian:build": "pnpm --filter zixian run build"
-  },
-  "dependencies": {
-    "pixi.js": "7.0.5"
   }
 }
