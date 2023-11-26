@@ -4,7 +4,7 @@ export type RenderConfig = {
   background: string
 }
 
-export class Renderer extends Application{
+export class Renderer extends Application {
   _dom: HTMLElement | null = null
 
   constructor(dom: HTMLElement, config?: RenderConfig) {
