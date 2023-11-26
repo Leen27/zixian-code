@@ -6,9 +6,10 @@
   ],
   "main": "./dist/zixian.cjs",
   "module": "./dist/zixian.js",
-  "types": "./dist/main.d.ts",
+  "types": "./types/main.d.ts",
   "exports": {
     ".": {
+      "types": "./types/main.d.ts",
       "import": "./dist/zixian.js",
       "require": "./dist/zixian.umd.cjs"
     }

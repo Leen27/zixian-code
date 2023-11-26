@@ -2,8 +2,11 @@ import { createGUI } from './gui'
 import type { GUI } from './gui'
 import type { RenderConfig } from './renderer'
 import { Renderer } from './renderer'
+
 export * from './gui'
-export  { createObjectActor } from './actor'
+export * from './actor'
+export * from './drama'
+export * from './renderer'
 
 export class Zixian {
   _domContainer: HTMLElement | null = null

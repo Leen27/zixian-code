@@ -7,7 +7,7 @@ import stackItemBackImg from '../assets/BackTile_01.png'
 import scopeItemBackImg from '../assets/platformPack_tile021.png'
 
 let _pixelSizeX = 1
-let _pixelSizeY = 1
+// let _pixelSizeY = 1
 
 const STACK_BOX_SIZE = 50
 
@@ -115,19 +115,21 @@ export const createObjectInfoPanel = ({
   width,
   height,
   pixelSizeX,
-  pixelSizeY,
+  // pixelSizeY,
 }: {
   pixelSizeX: number
-  pixelSizeY: number
+  // pixelSizeY: number
   width: number
   height: number
 }) => {
   _pixelSizeX = pixelSizeX
-  _pixelSizeY = pixelSizeY
+  // _pixelSizeY = pixelSizeY
 
   const objectPanel = new Panel({
     width,
     height,
+    x: 0,
+    y: 0,
     bgColor: '#F1E5CC'
   })
 

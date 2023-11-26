@@ -20,18 +20,9 @@ import studio from '@theatre/studio'
   }
   const objectPanel = createObjectInfoPanel({
     pixelSizeX,
-    pixelSizeY,
     width: windowData.width * 0.8,
     height: windowData.height * 0.8
   })
-  const objectActor = createObjectActor({
-    position: {
-      x: appDom.clientWidth * 0.1,
-      y: appDom.clientHeight * 0.1
-    }
-  })
-  objectPanel.addChild(objectActor)
-
   zx?.gui.addChild(objectPanel)
 
   studio.initialize()

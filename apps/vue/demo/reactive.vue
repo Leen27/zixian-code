@@ -5,7 +5,7 @@
 import { ref, reactive, effect } from 'vue-core-reactivity'
 import {onMounted } from 'vue'
 import JSON_Demo1 from './demo1.json'
-import { createDrama, Zixian, createNode } from 'zixian'
+import { createDrama, Zixian, createObjectActor } from 'zixian'
 
 const a = ref(0)
 const b = ref(0)
@@ -21,7 +21,8 @@ onMounted(() => {
     }
     const zx = new Zixian(zixianRef.value)
     if (!zx.renderer) return
-    const node = createNode(zx.renderer)
+    const node = createObjectActor()
+    zx.gui.addChild(node)
     const drama = createDrama<{
         position: {
             x: number
