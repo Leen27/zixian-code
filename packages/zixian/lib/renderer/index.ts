@@ -1,4 +1,4 @@
-import { Application } from "pixi.js";
+import { Application, IApplicationOptions } from "pixi.js";
 
 export type RenderConfig = {
   background: string
@@ -12,7 +12,7 @@ export class Renderer extends Application{
       background = "#1099bb"
     } = config || {}
 
-    super({ background, resizeTo: dom })
+    super({ background, resizeTo: dom } as IApplicationOptions)
     this._dom = dom
     
     dom.appendChild(this.view as any);

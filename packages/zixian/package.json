@@ -6,6 +6,7 @@
   ],
   "main": "./dist/zixian.cjs",
   "module": "./dist/zixian.js",
+  "types": "./types/main.d.ts",
   "exports": {
     ".": {
       "types": "./types/main.d.ts",

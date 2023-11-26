@@ -1,7 +1,7 @@
 import { Container } from 'pixi.js'
 import type { Renderer } from '../renderer'
 
-export class GUI extends Container{
+export class GUI extends Container<any> {
   renderer: Renderer
 
   constructor(renderer: Renderer) {
@@ -13,7 +13,7 @@ export class GUI extends Container{
   }
 
   init() {
-    this.renderer.stage.addChild(this)
+    this.renderer.stage.addChild(this as any)
     const { width, height } = this.getContainerSize()
     this.width = width
     this.height = height

@@ -21,22 +21,22 @@ onMounted(() => {
     }
     const zx = createZixian(zixianRef.value)
 
-    const pixelSizeX = zixianRef.value.clientWidth / 1000
-    const pixelSizeY = zixianRef.value.clientHeight / 1000
+    // const pixelSizeX = zixianRef.value.clientWidth / 1000
+    // const pixelSizeY = zixianRef.value.clientHeight / 1000
 
-    const windowData = {
-        width: zixianRef.value.clientWidth,
-        height: zixianRef.value.clientWidth,
-    }
-    const objectPanel = createObjectInfoPanel({
-        pixelSizeX,
-        width: windowData.width,
-        height: windowData.height
-    })
-    zx?.gui.addChild(objectPanel)
+    // const windowData = {
+    //     width: zixianRef.value.clientWidth,
+    //     height: zixianRef.value.clientWidth,
+    // }
+    // const objectPanel = createObjectInfoPanel({
+    //     pixelSizeX,
+    //     width: windowData.width,
+    //     height: windowData.height
+    // })
+    // zx?.gui.addChild(objectPanel)
 
 
-    // if (!zx.renderer) return
+    // // if (!zx.renderer) return
     // const node = createObjectActor()
     // zx.gui.addChild(node)
     // const drama = createDrama<{

@@ -7,7 +7,7 @@ type Options = {
     bgColor: string | number;
     zIndex: number;
 };
-export declare class Panel extends Container {
+export declare class Panel extends Container<any> {
     constructor(options?: Partial<Options>);
 }
 export declare function createPanel(options?: Partial<Options>): Panel;

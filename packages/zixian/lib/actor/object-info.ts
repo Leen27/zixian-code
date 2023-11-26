@@ -24,7 +24,7 @@ function createStack({
   // Create a new texture
   const boxtexture = Texture.from(stackItemBackImg);
   const createBox = () => {
-    const box = new Sprite(boxtexture);
+    const box = new Sprite(boxtexture as any);
     box.width = boxSize
     box.height = boxSize
     return box
@@ -58,7 +58,7 @@ function createScopeItems(itemsAmount: number): any[]
     const boxtexture = Texture.from(scopeItemBackImg);
     const boxSize = STACK_BOX_SIZE
     const createBox = () => {
-      const box = new Sprite(boxtexture);
+      const box = new Sprite(boxtexture as any);
       box.width = boxSize
       box.height = boxSize
       return box

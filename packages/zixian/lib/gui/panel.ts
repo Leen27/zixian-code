@@ -8,7 +8,7 @@ type Options = {
   bgColor: string | number
   zIndex: number
 }
-export class Panel extends Container {
+export class Panel extends Container<any> {
   constructor(options?: Partial<Options>) {
     super()
     const { x = 0, y = 0, width = 200, height = 300, bgColor = 0x000, zIndex = 999 } = options || {}
@@ -21,7 +21,7 @@ export class Panel extends Container {
 
     const bg = new Graphics()
     bg
-      .beginFill(bgColor)
+      .beginFill(bgColor as number)
       .drawRect(0, 0, width, height)
       .endFill();
     

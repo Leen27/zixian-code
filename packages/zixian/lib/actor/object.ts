@@ -32,7 +32,7 @@ export class ObjectActorIcon extends Actor {
     super()
     
     const icontexture = Texture.from(icon);
-    const iconBox = new Sprite(icontexture);
+    const iconBox = new Sprite(icontexture as any);
     iconBox.width = width
     iconBox.height = height
     iconBox.x = x
