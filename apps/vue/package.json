@@ -4,8 +4,13 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "@pixi/core": "^7.0.0",
+    "@pixi/particle-emitter": "^5.0.8",
+    "@pixi/ticker": "^7.3.2",
+    "@pixi/utils": "^7.3.2",
     "@theatre/core": "^0.7.0",
     "@theatre/studio": "^0.7.0",
+    "pixi.js": "7.1.4",
     "vue": "^3.3.7",
     "vue-core-reactivity": "workspace:*",
     "zixian": "workspace:*"

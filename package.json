@@ -18,6 +18,6 @@
     "zixian:build": "pnpm --filter zixian run build"
   },
   "dependencies": {
-    "pixi.js": "^7.3.2"
+    "pixi.js": "7.0.5"
   }
 }

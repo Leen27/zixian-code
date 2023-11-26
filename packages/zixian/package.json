@@ -20,16 +20,20 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@pixi/particle-emitter": "^5.0.8",
     "@pixi/ui": "^0.10.1",
     "@theatre/core": "^0.7.0",
     "@theatre/studio": "^0.7.0",
-    "pixi.js": "^7.3.2",
+    "pixi-sound": "^3.0.5",
+    "pixi.js": "7.1.4",
     "typescript": "^5.0.2",
     "vite": "^4.4.5"
   },
   "peerDependencies": {
+    "@pixi/particle-emitter": "^5.0.8",
     "@pixi/ui": "^0.10.1",
     "@theatre/core": "^0.7.0",
-    "pixi.js": "^7.3.2"
+    "pixi-sound": "^3.0.5",
+    "pixi.js": "7.1.4"
   }
 }
