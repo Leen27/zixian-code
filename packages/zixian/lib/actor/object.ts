@@ -1,4 +1,4 @@
-import { Sprite, Texture } from 'pixi.js'
+import { Graphics, Sprite, Texture } from 'pixi.js'
 import { Actor } from './actor'
 
 export type ActorOptions = {
@@ -12,31 +12,32 @@ export type IconActorOptions = ActorOptions &{
   icon: string
 }
 
-class ObjectActor extends Actor {
+class ObjectActor implements Actor {
+  appearance: Graphics
   constructor(options?: ActorOptions) {
-    super()
-    this.beginFill(0x650A5A).lineStyle(2, 0xFEEB77, 1)
+    this.appearance = new Graphics().beginFill(0x650A5A).lineStyle(2, 0xFEEB77, 1)
     .drawRect(0, 0, 100, 100).endFill();
-    this.position = { x: options?.x || 0, y: options?.y || 0 }
+    this.appearance.position = { x: options?.x || 0, y: options?.y || 0 }
   }
 }
 
-export class ObjectActorIcon extends Actor {
+export class ObjectActorIcon implements Actor {
+  appearance: Sprite
   constructor({
     width,
     height,
     x,
     y,
     icon
-  }: IconActorOptions) {
-    super()
-    
+  }: IconActorOptions) {    
     const icontexture = Texture.from(icon);
     const iconBox = new Sprite(icontexture as any);
     iconBox.width = width
     iconBox.height = height
     iconBox.x = x
     iconBox.y = y
+
+    this.appearance = iconBox
   }
 }
 

@@ -156,15 +156,15 @@ class ObjectInfoPanel extends Panel{
     this.addChild(this.code)
   }
 
-  addStack(config: IconActorOptions) {
+  addStack(config: { icon: string }) {
     const icon = new ObjectActorIcon({
       ...config,
       width: this.BOX_SIZE,
       height: this.BOX_SIZE,
       x: 0,
-      y: (this.stack.items.length - 1) * this.BOX_SIZE
+      y: (this.stack.items.length - 1) * this.BOX_SIZE,
     })
-    this.stack.addItem(icon)
+    this.stack.addItem(icon.appearance)
   }
 }
 

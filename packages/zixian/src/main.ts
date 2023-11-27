@@ -2,6 +2,7 @@ import './style.css'
 import { createZixian, createObjectActor, createObjectInfoPanel } from '../lib/main.ts'
 import * as core from '@theatre/core'
 import studio from '@theatre/studio'
+import stackIcon from './intelligent-emoji.png'
 
 (() => {
   const appDom = document.querySelector<HTMLDivElement>('#app')!
@@ -24,6 +25,10 @@ import studio from '@theatre/studio'
     height: windowData.height * 0.8
   })
   zx?.gui.addChild(objectPanel)
+
+  objectPanel.addStack({
+    icon: stackIcon
+  })
 
   studio.initialize()
 

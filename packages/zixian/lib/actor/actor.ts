@@ -1,12 +1,10 @@
-import { Graphics } from 'pixi.js'
+import { Container, Graphics, Sprite } from 'pixi.js'
 import type { GUI } from '../gui/gui'
 
-export class Actor extends Graphics {
-  constructor() {
-    super()
-  }
+export interface Actor {
+  appearance: Graphics | Container | Sprite
 }
 
 export function createActor(gui: GUI, actor: Actor) {
-  return gui.addChild(actor)
+  return gui.addChild(actor.appearance)
 }
