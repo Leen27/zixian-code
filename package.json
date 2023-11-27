@@ -15,6 +15,7 @@
     "vue:dev": "vitepress dev apps/vue",
     "vue:build": "vitepress build apps/vue",
     "vue:preview": "vitepress preview apps/vue",
-    "zixian:build": "pnpm --filter zixian run build"
+    "zixian:build": "pnpm --filter zixian run build",
+    "zixian:dev": "pnpm --filter zixian run dev"
   }
 }
