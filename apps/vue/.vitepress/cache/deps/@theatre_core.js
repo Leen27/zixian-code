@@ -1,6 +1,6 @@
 import {
   __commonJS
-} from "./chunk-5WWUZCGV.js";
+} from "./chunk-76J2PTFD.js";
 
 // node_modules/.pnpm/registry.npmmirror.com+@theatre+dataverse@0.7.0/node_modules/@theatre/dataverse/dist/index.js
 var require_dist = __commonJS({

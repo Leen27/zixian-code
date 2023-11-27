@@ -1,4 +1,4 @@
-lockfileVersion: '6.0'
+lockfileVersion: '6.1'
 
 settings:
   autoInstallPeers: true
@@ -25,10 +25,10 @@ importers:
         version: registry.npmmirror.com/@theatre/studio@0.7.0(@theatre/core@0.7.0)
       pixi.js:
         specifier: ^7.1.4
-        version: registry.npmmirror.com/pixi.js@7.3.2(@pixi/utils@7.3.2)
+        version: registry.npmmirror.com/pixi.js@7.1.4
       vue:
         specifier: ^3.3.7
-        version: registry.npmmirror.com/vue@3.3.9
+        version: registry.npmmirror.com/vue@3.3.7
       vue-core-reactivity:
         specifier: workspace:*
         version: link:../../packages-vue/reactivity
@@ -60,10 +60,10 @@ importers:
         version: registry.npmmirror.com/@theatre/studio@0.7.0(@theatre/core@0.7.0)
       pixi.js:
         specifier: ^7.1.4
-        version: registry.npmmirror.com/pixi.js@7.3.2(@pixi/utils@7.3.2)
+        version: registry.npmmirror.com/pixi.js@7.1.4
       typescript:
         specifier: ^5.0.2
-        version: registry.npmmirror.com/typescript@5.3.2
+        version: registry.npmmirror.com/typescript@5.0.2
       vite:
         specifier: ^4.4.5
         version: registry.npmmirror.com/vite@4.5.0
@@ -573,31 +573,22 @@ packages:
     name: '@jridgewell/sourcemap-codec'
     version: 1.4.15
 
-  registry.npmmirror.com/@pixi/accessibility@7.3.2(@pixi/core@7.3.2)(@pixi/display@7.3.2)(@pixi/events@7.3.2):
-    resolution: {integrity: sha512-MdkU22HTauRvq9cMeWZIQGaDDa86sr+m12rKNdLV+FaDQgP/AhP+qCVpK7IKeJa9BrWGXaYMw/vueij7HkyDSA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/accessibility/-/accessibility-7.3.2.tgz}
-    id: registry.npmmirror.com/@pixi/accessibility/7.3.2
+  registry.npmmirror.com/@pixi/accessibility@7.1.4:
+    resolution: {integrity: sha512-F0hge+UE200uu3Sk8MJtKhJ2eisZ/mkZMmUO/8ZTmj9wXRbp8qGDrlmEX/UbwBYUrdXG9cCrFZ+XXHA/Aq5fxg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/accessibility/-/accessibility-7.1.4.tgz}
     name: '@pixi/accessibility'
-    version: 7.3.2
-    peerDependencies:
-      '@pixi/core': 7.3.2
-      '@pixi/display': 7.3.2
-      '@pixi/events': 7.3.2
-    dependencies:
-      '@pixi/core': registry.npmmirror.com/@pixi/core@7.3.2
-      '@pixi/display': registry.npmmirror.com/@pixi/display@7.3.2(@pixi/core@7.3.2)
-      '@pixi/events': registry.npmmirror.com/@pixi/events@7.3.2(@pixi/core@7.3.2)(@pixi/display@7.3.2)
+    version: 7.1.4
 
-  registry.npmmirror.com/@pixi/app@7.3.2(@pixi/core@7.3.2)(@pixi/display@7.3.2):
-    resolution: {integrity: sha512-3YRFSMvAxDebAz3/JJv+2jzbPkT8cHC0IHmmLRN8krDL1pZV+YjMLgMwN/Oeyv5TSbwNqnrF5su5whNkRaxeZQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/app/-/app-7.3.2.tgz}
-    id: registry.npmmirror.com/@pixi/app/7.3.2
+  registry.npmmirror.com/@pixi/app@7.1.4:
+    resolution: {integrity: sha512-zUZeRnuUS+94ynCpYGaZHBZjUqpKITk7Zz196RY6F6pRs5ycZTmtA+ChnU45N0xg11rsyT2Qam3ogdL2SjkNpw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/app/-/app-7.1.4.tgz}
     name: '@pixi/app'
-    version: 7.3.2
-    peerDependencies:
-      '@pixi/core': 7.3.2
-      '@pixi/display': 7.3.2
+    version: 7.1.4
+
+  registry.npmmirror.com/@pixi/assets@7.1.4:
+    resolution: {integrity: sha512-lRrTOyd8d4+vl4nqz7C7rjnfwcgOGrIjNg7KDm1ntKB7QeTLAf0CbtWbgy3MFPnos0qvYLZwGai6I+bcW6NzxA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/assets/-/assets-7.1.4.tgz}
+    name: '@pixi/assets'
+    version: 7.1.4
     dependencies:
-      '@pixi/core': registry.npmmirror.com/@pixi/core@7.3.2
-      '@pixi/display': registry.npmmirror.com/@pixi/display@7.3.2(@pixi/core@7.3.2)
+      '@types/css-font-loading-module': registry.npmmirror.com/@types/css-font-loading-module@0.0.7
 
   registry.npmmirror.com/@pixi/assets@7.3.2(@pixi/core@7.3.2)(@pixi/utils@7.3.2):
     resolution: {integrity: sha512-yteq6ptAxA09EcwU9D9hl7qr5yWIqy+c2PsXkTDkc76vTAwIamLY3KxLq2aR5y1U4L4O6aHFJd26uNhHcuTPmw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/assets/-/assets-7.3.2.tgz}
@@ -611,6 +602,7 @@ packages:
       '@pixi/core': registry.npmmirror.com/@pixi/core@7.3.2
       '@pixi/utils': registry.npmmirror.com/@pixi/utils@7.3.2
       '@types/css-font-loading-module': registry.npmmirror.com/@types/css-font-loading-module@0.0.7
+    dev: true
 
   registry.npmmirror.com/@pixi/color@7.3.2:
     resolution: {integrity: sha512-jur5PvdOtUBEUTjmPudW5qdQq6yYGlVGsi3HyhasJw14bN+GKJwiCKgIsyrsiNL5HBUXmje4ICwQohf6BqKqxA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/color/-/color-7.3.2.tgz}
@@ -618,28 +610,43 @@ packages:
     version: 7.3.2
     dependencies:
       '@pixi/colord': registry.npmmirror.com/@pixi/colord@2.9.6
+    dev: true
 
   registry.npmmirror.com/@pixi/colord@2.9.6:
     resolution: {integrity: sha512-nezytU2pw587fQstUu1AsJZDVEynjskwOL+kibwcdxsMBFqPsFFNA7xl0ii/gXuDi6M0xj3mfRJj8pBSc2jCfA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/colord/-/colord-2.9.6.tgz}
     name: '@pixi/colord'
     version: 2.9.6
+    dev: true
 
-  registry.npmmirror.com/@pixi/compressed-textures@7.3.2(@pixi/assets@7.3.2)(@pixi/core@7.3.2):
-    resolution: {integrity: sha512-J3ENMHDPQO6CJRei55gqI0WmiZJIK6SgsW5AEkShT0aAe5miEBSomv70pXw/58ru+4/Hx8cXjamsGt4aQB2D0Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/compressed-textures/-/compressed-textures-7.3.2.tgz}
-    id: registry.npmmirror.com/@pixi/compressed-textures/7.3.2
+  registry.npmmirror.com/@pixi/compressed-textures@7.1.4:
+    resolution: {integrity: sha512-tiolPtyOZmtZIXcC3DvNUzuAtmKpqL6LPm3craPkPUEm07Ma1IY0Xf17i2trLu8PeWpl0rcc6iW+/Nukusqa2A==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/compressed-textures/-/compressed-textures-7.1.4.tgz}
     name: '@pixi/compressed-textures'
-    version: 7.3.2
-    peerDependencies:
-      '@pixi/assets': 7.3.2
-      '@pixi/core': 7.3.2
-    dependencies:
-      '@pixi/assets': registry.npmmirror.com/@pixi/assets@7.3.2(@pixi/core@7.3.2)(@pixi/utils@7.3.2)
-      '@pixi/core': registry.npmmirror.com/@pixi/core@7.3.2
+    version: 7.1.4
+
+  registry.npmmirror.com/@pixi/constants@7.1.4:
+    resolution: {integrity: sha512-mSXWnpNQ9h73RMHZoavmHHVnLprLhrWZnJtt0jqF0e4i7nVfU6WGB9wHfhk29TI9MWcZ487qHgdLHpDgUaulSw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/constants/-/constants-7.1.4.tgz}
+    name: '@pixi/constants'
+    version: 7.1.4
 
   registry.npmmirror.com/@pixi/constants@7.3.2:
     resolution: {integrity: sha512-Q8W3ncsFxmfgC5EtokpG92qJZabd+Dl+pbQAdHwiPY3v+8UNq77u4VN2qtl1Z04864hCcg7AStIYEDrzqTLF6Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/constants/-/constants-7.3.2.tgz}
     name: '@pixi/constants'
     version: 7.3.2
+    dev: true
+
+  registry.npmmirror.com/@pixi/core@7.1.4:
+    resolution: {integrity: sha512-0QBVJK00qaqd5bf+Wv6pwTjGkwYuxjS/kbhyacuGM23XyoMr6Xqaa4jZiy7g5Ug3iW7HFALAPDnjyyzeeeTRsQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/core/-/core-7.1.4.tgz}
+    name: '@pixi/core'
+    version: 7.1.4
+    dependencies:
+      '@pixi/constants': registry.npmmirror.com/@pixi/constants@7.1.4
+      '@pixi/extensions': registry.npmmirror.com/@pixi/extensions@7.1.4
+      '@pixi/math': registry.npmmirror.com/@pixi/math@7.1.4
+      '@pixi/runner': registry.npmmirror.com/@pixi/runner@7.1.4
+      '@pixi/settings': registry.npmmirror.com/@pixi/settings@7.1.4
+      '@pixi/ticker': registry.npmmirror.com/@pixi/ticker@7.1.4
+      '@pixi/utils': registry.npmmirror.com/@pixi/utils@7.1.4
+      '@types/offscreencanvas': registry.npmmirror.com/@types/offscreencanvas@2019.7.3
 
   registry.npmmirror.com/@pixi/core@7.3.2:
     resolution: {integrity: sha512-Pta3ee8MtJ3yKxGXzglBWgwbEOKMB6Eth+FpLTjL0rgxiqTB550YX6jsNEQQAzcGjCBlO3rC/IF57UZ2go/X6w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/core/-/core-7.3.2.tgz}
@@ -655,6 +662,12 @@ packages:
       '@pixi/ticker': registry.npmmirror.com/@pixi/ticker@7.3.2
       '@pixi/utils': registry.npmmirror.com/@pixi/utils@7.3.2
       '@types/offscreencanvas': registry.npmmirror.com/@types/offscreencanvas@2019.7.3
+    dev: true
+
+  registry.npmmirror.com/@pixi/display@7.1.4:
+    resolution: {integrity: sha512-vdRvydZZp0HXQuJF9A6GPoV+D4ya3775cB1TxLC5/7Wtgvjo/LuZjfpaYXU7Or4HZ5mu5LaUAmAQ71fiwrZOXg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/display/-/display-7.1.4.tgz}
+    name: '@pixi/display'
+    version: 7.1.4
 
   registry.npmmirror.com/@pixi/display@7.3.2(@pixi/core@7.3.2):
     resolution: {integrity: sha512-cY5AnZ3TWt5GYGx4e5AQ2/2U9kP+RorBg/O30amJ+8e9bFk9rS8cjh/DDq/hc4lql96BkXAInTl40eHnAML5lQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/display/-/display-7.3.2.tgz}
@@ -665,6 +678,12 @@ packages:
       '@pixi/core': 7.3.2
     dependencies:
       '@pixi/core': registry.npmmirror.com/@pixi/core@7.3.2
+    dev: true
+
+  registry.npmmirror.com/@pixi/events@7.1.4:
+    resolution: {integrity: sha512-VbmFeMMHOquFl+mTx2UbPSZwpUJMBW7IdjbywFFE01YmEsRcom8TgUzw+hJGBilkp50KSWKEvlOJmjxuY/XMUg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/events/-/events-7.1.4.tgz}
+    name: '@pixi/events'
+    version: 7.1.4
 
   registry.npmmirror.com/@pixi/events@7.3.2(@pixi/core@7.3.2)(@pixi/display@7.3.2):
     resolution: {integrity: sha512-Moca9epu8jk1wIQCdVYjhz2pD9Ol21m50wvWUKvpgt9yM/AjkCLSDt8HO/PmTpavDrkhx5pVVWeDDA6FyUNaGA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/events/-/events-7.3.2.tgz}
@@ -677,81 +696,58 @@ packages:
     dependencies:
       '@pixi/core': registry.npmmirror.com/@pixi/core@7.3.2
       '@pixi/display': registry.npmmirror.com/@pixi/display@7.3.2(@pixi/core@7.3.2)
+    dev: true
+
+  registry.npmmirror.com/@pixi/extensions@7.1.4:
+    resolution: {integrity: sha512-slyfaLfV+LwPeFpJsRuDThHFH6jJLe5I/v+y381YJtA8CanxdQZt2JeA0wCJDIj3/FrZ73IrTbpiW6sw4f2Fmg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/extensions/-/extensions-7.1.4.tgz}
+    name: '@pixi/extensions'
+    version: 7.1.4
 
   registry.npmmirror.com/@pixi/extensions@7.3.2:
     resolution: {integrity: sha512-Qw84ADfvmVu4Mwj+zTik/IEEK9lWS5n4trbrpQCcEZ+Mb8oRAXWvKz199mi1s7+LaZXDqeCY1yr2PHQaFf1KBA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/extensions/-/extensions-7.3.2.tgz}
     name: '@pixi/extensions'
     version: 7.3.2
+    dev: true
 
-  registry.npmmirror.com/@pixi/extract@7.3.2(@pixi/core@7.3.2):
-    resolution: {integrity: sha512-KsoflvQZV/XD8A8xbtRnmI4reYekbI4MOi7ilwQe5tMz6O1mO7IzrSukxkSMD02f6SpbAqbi7a1EayTjvY0ECQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/extract/-/extract-7.3.2.tgz}
-    id: registry.npmmirror.com/@pixi/extract/7.3.2
+  registry.npmmirror.com/@pixi/extract@7.1.4:
+    resolution: {integrity: sha512-r5CjOq4kM+yxd+8NMpgwxN6kXMAByNtwmM2dHyKUqKg+a+xfC5BqBa9wOpmO6cXJq7zzb1+zZxzryIsGa2H2GQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/extract/-/extract-7.1.4.tgz}
     name: '@pixi/extract'
-    version: 7.3.2
-    peerDependencies:
-      '@pixi/core': 7.3.2
-    dependencies:
-      '@pixi/core': registry.npmmirror.com/@pixi/core@7.3.2
+    version: 7.1.4
 
-  registry.npmmirror.com/@pixi/filter-alpha@7.3.2(@pixi/core@7.3.2):
-    resolution: {integrity: sha512-nZMdn310wH5ZK1slwv3X4qT8eLoAGO7SgYGCy5IsMtpCtNObzE9XA4tAfhXrjihyzPS9KvszgAbnv1Qpfh0/uw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/filter-alpha/-/filter-alpha-7.3.2.tgz}
-    id: registry.npmmirror.com/@pixi/filter-alpha/7.3.2
+  registry.npmmirror.com/@pixi/filter-alpha@7.1.4:
+    resolution: {integrity: sha512-H1cLuZGrXw5asm1ywgb+3M3xyC1IoHPUBCw+f9CZlEKSAivWlez6BWAvjD4OK9v248TzQQ24A8XluUcYFAex3w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/filter-alpha/-/filter-alpha-7.1.4.tgz}
     name: '@pixi/filter-alpha'
-    version: 7.3.2
-    peerDependencies:
-      '@pixi/core': 7.3.2
-    dependencies:
-      '@pixi/core': registry.npmmirror.com/@pixi/core@7.3.2
+    version: 7.1.4
 
-  registry.npmmirror.com/@pixi/filter-blur@7.3.2(@pixi/core@7.3.2):
-    resolution: {integrity: sha512-unu3zhwHMhN+iAe7Td2rK40i2UJ2GOhzWK+6jcU3ZkMOsFCT5kgBoMRTejeQVcvCs6GoYK8imbkE7mXt05Vj6A==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/filter-blur/-/filter-blur-7.3.2.tgz}
-    id: registry.npmmirror.com/@pixi/filter-blur/7.3.2
+  registry.npmmirror.com/@pixi/filter-blur@7.1.4:
+    resolution: {integrity: sha512-VXyuDsMKXnCnbBo+YEPYBEjfFiuoSwmpOxD6Thb6sNc0pRYW4Nbd59oZqb3lOee6I1+np6fnA+U9SV5bIt0PEQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/filter-blur/-/filter-blur-7.1.4.tgz}
     name: '@pixi/filter-blur'
-    version: 7.3.2
-    peerDependencies:
-      '@pixi/core': 7.3.2
-    dependencies:
-      '@pixi/core': registry.npmmirror.com/@pixi/core@7.3.2
+    version: 7.1.4
 
-  registry.npmmirror.com/@pixi/filter-color-matrix@7.3.2(@pixi/core@7.3.2):
-    resolution: {integrity: sha512-rbyjes/9SMoV9jjPiK0sLMkmLfN8D17GoTJIfq/KLv1x9646W5fL2QSKkN04UkZ+020ndWvIOxK1S97tvRyCfg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/filter-color-matrix/-/filter-color-matrix-7.3.2.tgz}
-    id: registry.npmmirror.com/@pixi/filter-color-matrix/7.3.2
+  registry.npmmirror.com/@pixi/filter-color-matrix@7.1.4:
+    resolution: {integrity: sha512-TGZysSqqmOQaRPyTsOAiJi6RDOMes9wAy9eR7/P2eiaXyBS1IgK33qqfZTyTyOtZrEs5jyStl2Wx7WaOV5ilnQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/filter-color-matrix/-/filter-color-matrix-7.1.4.tgz}
     name: '@pixi/filter-color-matrix'
-    version: 7.3.2
-    peerDependencies:
-      '@pixi/core': 7.3.2
-    dependencies:
-      '@pixi/core': registry.npmmirror.com/@pixi/core@7.3.2
+    version: 7.1.4
 
-  registry.npmmirror.com/@pixi/filter-displacement@7.3.2(@pixi/core@7.3.2):
-    resolution: {integrity: sha512-ZHl7Sfb8JYd9Z6j96OHCC0NhMKhhXJRE5AbkSDohjEMVCK1BV5rDGAHV8WVt/2MJ/j83CXUpydzyMhdM4lMchg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/filter-displacement/-/filter-displacement-7.3.2.tgz}
-    id: registry.npmmirror.com/@pixi/filter-displacement/7.3.2
+  registry.npmmirror.com/@pixi/filter-displacement@7.1.4:
+    resolution: {integrity: sha512-nr6UhJ5b0YbfsKrgHiD5ZAMcCxp3of6pq0w0duw5XtEGi16O4lAu6tC1FU06C2LLxW49R2aoAVKiX8h+otHmwA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/filter-displacement/-/filter-displacement-7.1.4.tgz}
     name: '@pixi/filter-displacement'
-    version: 7.3.2
-    peerDependencies:
-      '@pixi/core': 7.3.2
-    dependencies:
-      '@pixi/core': registry.npmmirror.com/@pixi/core@7.3.2
+    version: 7.1.4
 
-  registry.npmmirror.com/@pixi/filter-fxaa@7.3.2(@pixi/core@7.3.2):
-    resolution: {integrity: sha512-9brtlxDnQTZk2XiFBKdBK9e+8CX9LdxxcL7LRpjEyiHuAPvTlQgu9B85LrJ4GzWKqJJKaIIZBzhIoiCLUnfeXg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/filter-fxaa/-/filter-fxaa-7.3.2.tgz}
-    id: registry.npmmirror.com/@pixi/filter-fxaa/7.3.2
+  registry.npmmirror.com/@pixi/filter-fxaa@7.1.4:
+    resolution: {integrity: sha512-3cnMf91/YKDBeULFy44usr+ld6eKL0MID8cx9BXVq0W0bRpJYHfycfmA5ycEh7xJ4MsKZ8VRBSx/2hTDstCxhA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/filter-fxaa/-/filter-fxaa-7.1.4.tgz}
     name: '@pixi/filter-fxaa'
-    version: 7.3.2
-    peerDependencies:
-      '@pixi/core': 7.3.2
-    dependencies:
-      '@pixi/core': registry.npmmirror.com/@pixi/core@7.3.2
+    version: 7.1.4
 
-  registry.npmmirror.com/@pixi/filter-noise@7.3.2(@pixi/core@7.3.2):
-    resolution: {integrity: sha512-F8GQQ20n7tCjThX6GCXckiXz2YffOCxicTJ0oat9aVDZh+sVsAxYX0aKSdHh0hhv18F0yuc6tPsSL5DYb63xFg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/filter-noise/-/filter-noise-7.3.2.tgz}
-    id: registry.npmmirror.com/@pixi/filter-noise/7.3.2
+  registry.npmmirror.com/@pixi/filter-noise@7.1.4:
+    resolution: {integrity: sha512-IhN3sjctm8s650OGfQo2NuyjSZ912F2YXywrbDc8nt34fXk2O5Z/g4g2hORbfW4+YE7vrm+5xS8MU7/Xam0Tfg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/filter-noise/-/filter-noise-7.1.4.tgz}
     name: '@pixi/filter-noise'
-    version: 7.3.2
-    peerDependencies:
-      '@pixi/core': 7.3.2
-    dependencies:
-      '@pixi/core': registry.npmmirror.com/@pixi/core@7.3.2
+    version: 7.1.4
+
+  registry.npmmirror.com/@pixi/graphics@7.1.4:
+    resolution: {integrity: sha512-1mLvS01o9HffUG09ngp4DZGCz6jFzOpctXKZFosd/2rfVPVQWy/P5csgu8XqRk8ZrxJE6tgUK/asb7RiG+B9cQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/graphics/-/graphics-7.1.4.tgz}
+    name: '@pixi/graphics'
+    version: 7.1.4
 
   registry.npmmirror.com/@pixi/graphics@7.3.2(@pixi/core@7.3.2)(@pixi/display@7.3.2)(@pixi/sprite@7.3.2):
     resolution: {integrity: sha512-PhU6j1yub4tH/s+/gqByzgZ3mLv1mfb6iGXbquycg3+WypcxHZn0opFtI/axsazaQ9SEaWxw1m3i40WG5ANH5g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/graphics/-/graphics-7.3.2.tgz}
@@ -766,23 +762,28 @@ packages:
       '@pixi/core': registry.npmmirror.com/@pixi/core@7.3.2
       '@pixi/display': registry.npmmirror.com/@pixi/display@7.3.2(@pixi/core@7.3.2)
       '@pixi/sprite': registry.npmmirror.com/@pixi/sprite@7.3.2(@pixi/core@7.3.2)(@pixi/display@7.3.2)
+    dev: true
+
+  registry.npmmirror.com/@pixi/math@7.1.4:
+    resolution: {integrity: sha512-BK5aT5HfMw1WPoIl46hX0eWf3jBVUYExOj5JGmGDbpdA/RLyz2YBR3Ueegrl4H+iFY7d7He/hUq3a6vLpu0hMA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/math/-/math-7.1.4.tgz}
+    name: '@pixi/math'
+    version: 7.1.4
 
   registry.npmmirror.com/@pixi/math@7.3.2:
     resolution: {integrity: sha512-dutoZ0IVJ5ME7UtYNo2szu4D7qsgtJB7e3ylujBVu7BOP2e710BVtFwFSFV768N14h9H5roGnuzVoDiJac2u+w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/math/-/math-7.3.2.tgz}
     name: '@pixi/math'
     version: 7.3.2
+    dev: true
 
-  registry.npmmirror.com/@pixi/mesh-extras@7.3.2(@pixi/core@7.3.2)(@pixi/mesh@7.3.2):
-    resolution: {integrity: sha512-s/tg9TsTZZxLEdCDKWnBChDGkc041HCTP7ykJv4fEROzb9B0lskULYyvv+/YNNKa2Ugb9WnkMknpOdOXCpjyyg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/mesh-extras/-/mesh-extras-7.3.2.tgz}
-    id: registry.npmmirror.com/@pixi/mesh-extras/7.3.2
+  registry.npmmirror.com/@pixi/mesh-extras@7.1.4:
+    resolution: {integrity: sha512-bqOfrgCItiMNFMEsRWXInRMsYrNAQM3GykC+lUTrTZgNJf3kX2PCyv2SDXSZCb29Fo/puGL6q55JDpn0LeLJdg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/mesh-extras/-/mesh-extras-7.1.4.tgz}
     name: '@pixi/mesh-extras'
-    version: 7.3.2
-    peerDependencies:
-      '@pixi/core': 7.3.2
-      '@pixi/mesh': 7.3.2
-    dependencies:
-      '@pixi/core': registry.npmmirror.com/@pixi/core@7.3.2
-      '@pixi/mesh': registry.npmmirror.com/@pixi/mesh@7.3.2(@pixi/core@7.3.2)(@pixi/display@7.3.2)
+    version: 7.1.4
+
+  registry.npmmirror.com/@pixi/mesh@7.1.4:
+    resolution: {integrity: sha512-i7d6Pmx8ZanUSIBTxVasyxDfn4zB89u82GULSWvChLn/yQrA30F3Rd3+yC5g9ZgWG3uzYjC2jqBMB4VmvCnLUQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/mesh/-/mesh-7.1.4.tgz}
+    name: '@pixi/mesh'
+    version: 7.1.4
 
   registry.npmmirror.com/@pixi/mesh@7.3.2(@pixi/core@7.3.2)(@pixi/display@7.3.2):
     resolution: {integrity: sha512-LFkt7ELYXQLgbgHpjl68j6JD5ejUwma8zoPn2gqSBbY+6pK/phjvV1Wkh76muF46VvNulgXF0+qLIDdCsfrDaA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/mesh/-/mesh-7.3.2.tgz}
@@ -795,77 +796,51 @@ packages:
     dependencies:
       '@pixi/core': registry.npmmirror.com/@pixi/core@7.3.2
       '@pixi/display': registry.npmmirror.com/@pixi/display@7.3.2(@pixi/core@7.3.2)
+    dev: true
 
-  registry.npmmirror.com/@pixi/mixin-cache-as-bitmap@7.3.2(@pixi/core@7.3.2)(@pixi/display@7.3.2)(@pixi/sprite@7.3.2):
-    resolution: {integrity: sha512-bZRlyUN5+9kCUjn67V0IFtYIrbmx9Vs4sMOmXyrX3Q4B4gPLE46IzZz3v0IVaTjp32udlQztfJalIaWbuqgb3A==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/mixin-cache-as-bitmap/-/mixin-cache-as-bitmap-7.3.2.tgz}
-    id: registry.npmmirror.com/@pixi/mixin-cache-as-bitmap/7.3.2
+  registry.npmmirror.com/@pixi/mixin-cache-as-bitmap@7.1.4:
+    resolution: {integrity: sha512-ZTi4cp1IJxpMVdVDwvSBMK8NvxbXE4jHlxvwCXzdByZjOqeO+dr93Gob3/h91ttAfUwPIGKnpKTXqJ0slvvOwg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/mixin-cache-as-bitmap/-/mixin-cache-as-bitmap-7.1.4.tgz}
     name: '@pixi/mixin-cache-as-bitmap'
-    version: 7.3.2
-    peerDependencies:
-      '@pixi/core': 7.3.2
-      '@pixi/display': 7.3.2
-      '@pixi/sprite': 7.3.2
-    dependencies:
-      '@pixi/core': registry.npmmirror.com/@pixi/core@7.3.2
-      '@pixi/display': registry.npmmirror.com/@pixi/display@7.3.2(@pixi/core@7.3.2)
-      '@pixi/sprite': registry.npmmirror.com/@pixi/sprite@7.3.2(@pixi/core@7.3.2)(@pixi/display@7.3.2)
+    version: 7.1.4
 
-  registry.npmmirror.com/@pixi/mixin-get-child-by-name@7.3.2(@pixi/display@7.3.2):
-    resolution: {integrity: sha512-mbUi3WxXrkViH7qOgjk4fu2BN36NwNb7u+Fy1J5dS8Bntj57ZVKmEV9PbUy0zYjXE8rVmeAvSu/2kbn5n9UutQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/mixin-get-child-by-name/-/mixin-get-child-by-name-7.3.2.tgz}
-    id: registry.npmmirror.com/@pixi/mixin-get-child-by-name/7.3.2
+  registry.npmmirror.com/@pixi/mixin-get-child-by-name@7.1.4:
+    resolution: {integrity: sha512-XroDBm/KqC8rPUBsD/5wlkibJcjBPSqag1rXmJr6SKPStHrGD3BPcVDJCC8sBbMlOYOp/vxPNzf2qF1JJhaL/w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/mixin-get-child-by-name/-/mixin-get-child-by-name-7.1.4.tgz}
     name: '@pixi/mixin-get-child-by-name'
-    version: 7.3.2
-    peerDependencies:
-      '@pixi/display': 7.3.2
-    dependencies:
-      '@pixi/display': registry.npmmirror.com/@pixi/display@7.3.2(@pixi/core@7.3.2)
+    version: 7.1.4
 
-  registry.npmmirror.com/@pixi/mixin-get-global-position@7.3.2(@pixi/core@7.3.2)(@pixi/display@7.3.2):
-    resolution: {integrity: sha512-1nhWbBgmw6rK7yQJxzeI9yjKYYEkM5i3pee8qVu4YWo3b1xWVQA7osQG7aGM/4qywDkXaA1ZvciA5hfg6f4Q5Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/mixin-get-global-position/-/mixin-get-global-position-7.3.2.tgz}
-    id: registry.npmmirror.com/@pixi/mixin-get-global-position/7.3.2
+  registry.npmmirror.com/@pixi/mixin-get-global-position@7.1.4:
+    resolution: {integrity: sha512-Vp6PXghk4sTo/Ke6AB+YcAAadTPwnSEJgpVJH86i7BNOrojV69m0BSwPSdueOhh8rO+t45h2tDrLobm3JXAoqA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/mixin-get-global-position/-/mixin-get-global-position-7.1.4.tgz}
     name: '@pixi/mixin-get-global-position'
-    version: 7.3.2
-    peerDependencies:
-      '@pixi/core': 7.3.2
-      '@pixi/display': 7.3.2
-    dependencies:
-      '@pixi/core': registry.npmmirror.com/@pixi/core@7.3.2
-      '@pixi/display': registry.npmmirror.com/@pixi/display@7.3.2(@pixi/core@7.3.2)
+    version: 7.1.4
 
-  registry.npmmirror.com/@pixi/particle-container@7.3.2(@pixi/core@7.3.2)(@pixi/display@7.3.2)(@pixi/sprite@7.3.2):
-    resolution: {integrity: sha512-JYc4j4z97KmxyLp+1Lg0SNi8hy6RxcBBNQGk+CSLNXeDWxx3hykT5gj/ORX1eXyzHh1ZCG1XzeVS9Yr8QhlFHA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/particle-container/-/particle-container-7.3.2.tgz}
-    id: registry.npmmirror.com/@pixi/particle-container/7.3.2
+  registry.npmmirror.com/@pixi/particle-container@7.1.4:
+    resolution: {integrity: sha512-IAFhqkBgsyehc9J0tGc5mh4mSe/EJ1Wvl/rQaNEuj2mXDK8hKU/kXOKmgPwUImUeVTavDeBRrwpGum8F5KgQ9w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/particle-container/-/particle-container-7.1.4.tgz}
     name: '@pixi/particle-container'
-    version: 7.3.2
-    peerDependencies:
-      '@pixi/core': 7.3.2
-      '@pixi/display': 7.3.2
-      '@pixi/sprite': 7.3.2
-    dependencies:
-      '@pixi/core': registry.npmmirror.com/@pixi/core@7.3.2
-      '@pixi/display': registry.npmmirror.com/@pixi/display@7.3.2(@pixi/core@7.3.2)
-      '@pixi/sprite': registry.npmmirror.com/@pixi/sprite@7.3.2(@pixi/core@7.3.2)(@pixi/display@7.3.2)
+    version: 7.1.4
 
-  registry.npmmirror.com/@pixi/prepare@7.3.2(@pixi/core@7.3.2)(@pixi/display@7.3.2)(@pixi/graphics@7.3.2)(@pixi/text@7.3.2):
-    resolution: {integrity: sha512-aLPAXSYLUhMwxzJtn9m0TSZe+dQlZCt09QNBqYbSi8LZId54QMDyvfBb4zBOJZrD2xAZgYL5RIJuKHwZtFX6lQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/prepare/-/prepare-7.3.2.tgz}
-    id: registry.npmmirror.com/@pixi/prepare/7.3.2
+  registry.npmmirror.com/@pixi/prepare@7.1.4:
+    resolution: {integrity: sha512-E886CuBC3I8RPb9Mmm7ko+MLRQAb47ec6xpdL1c3t5w4D/iiYHV9Z/mKBluI6ElhSeZkkq3EbEiMSCB1ZTYXag==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/prepare/-/prepare-7.1.4.tgz}
     name: '@pixi/prepare'
-    version: 7.3.2
-    peerDependencies:
-      '@pixi/core': 7.3.2
-      '@pixi/display': 7.3.2
-      '@pixi/graphics': 7.3.2
-      '@pixi/text': 7.3.2
-    dependencies:
-      '@pixi/core': registry.npmmirror.com/@pixi/core@7.3.2
-      '@pixi/display': registry.npmmirror.com/@pixi/display@7.3.2(@pixi/core@7.3.2)
-      '@pixi/graphics': registry.npmmirror.com/@pixi/graphics@7.3.2(@pixi/core@7.3.2)(@pixi/display@7.3.2)(@pixi/sprite@7.3.2)
-      '@pixi/text': registry.npmmirror.com/@pixi/text@7.3.2(@pixi/core@7.3.2)(@pixi/sprite@7.3.2)
+    version: 7.1.4
+
+  registry.npmmirror.com/@pixi/runner@7.1.4:
+    resolution: {integrity: sha512-HJLnA2ToQWWqDRRPqFGshDVeBzS0wzWkdD0e9M5SgzGodZdSLDqfPq8Z7ZeeJbP6tH4nYfvpemmGN5Gxvoaitg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/runner/-/runner-7.1.4.tgz}
+    name: '@pixi/runner'
+    version: 7.1.4
 
   registry.npmmirror.com/@pixi/runner@7.3.2:
     resolution: {integrity: sha512-maKotoKJCQiQGBJwfM+iYdQKjrPN/Tn9+72F4WIf706zp/5vKoxW688Rsktg5BX4Mcn7ZkZvcJYTxj2Mv87lFA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/runner/-/runner-7.3.2.tgz}
     name: '@pixi/runner'
     version: 7.3.2
+    dev: true
+
+  registry.npmmirror.com/@pixi/settings@7.1.4:
+    resolution: {integrity: sha512-T+ksa5t7X8Y/cUO6hgXwM+YyHJR5m+yv1Rhf/MKkniRsDDB2Qg3U7UNr6snOemAXIg6BTw/wwzIFz4ZguG9wqg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/settings/-/settings-7.1.4.tgz}
+    name: '@pixi/settings'
+    version: 7.1.4
+    dependencies:
+      '@pixi/constants': registry.npmmirror.com/@pixi/constants@7.1.4
+      '@types/css-font-loading-module': registry.npmmirror.com/@types/css-font-loading-module@0.0.7
 
   registry.npmmirror.com/@pixi/settings@7.3.2:
     resolution: {integrity: sha512-vtxzuARDTbFe0fRYSqB53B+mPpX7v+QjjnCUmVMVvZiWr3QcngMWVml6c6dQDln7IakWoKZRrNG4FpggvDgLVg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/settings/-/settings-7.3.2.tgz}
@@ -875,32 +850,22 @@ packages:
       '@pixi/constants': registry.npmmirror.com/@pixi/constants@7.3.2
       '@types/css-font-loading-module': registry.npmmirror.com/@types/css-font-loading-module@0.0.7
       ismobilejs: registry.npmmirror.com/ismobilejs@1.1.1
+    dev: true
 
-  registry.npmmirror.com/@pixi/sprite-animated@7.3.2(@pixi/core@7.3.2)(@pixi/sprite@7.3.2):
-    resolution: {integrity: sha512-j9pyUe4cefxE9wecNfbWQyL5fBQKvCGYaOA0DE1X46ukBHrIuhA8u3jg2X3N3r4IcbVvxpWFYDrDsWXWeiBmSw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/sprite-animated/-/sprite-animated-7.3.2.tgz}
-    id: registry.npmmirror.com/@pixi/sprite-animated/7.3.2
+  registry.npmmirror.com/@pixi/sprite-animated@7.1.4:
+    resolution: {integrity: sha512-FH5e4PDP2ULQhJ33RBOJltHLtBkL0uV4MUPUWG280aTiXG9M52dUK8EvH+svtzkaPHWiTaDuHPdpMmWVF0E4SA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/sprite-animated/-/sprite-animated-7.1.4.tgz}
     name: '@pixi/sprite-animated'
-    version: 7.3.2
-    peerDependencies:
-      '@pixi/core': 7.3.2
-      '@pixi/sprite': 7.3.2
-    dependencies:
-      '@pixi/core': registry.npmmirror.com/@pixi/core@7.3.2
-      '@pixi/sprite': registry.npmmirror.com/@pixi/sprite@7.3.2(@pixi/core@7.3.2)(@pixi/display@7.3.2)
+    version: 7.1.4
 
-  registry.npmmirror.com/@pixi/sprite-tiling@7.3.2(@pixi/core@7.3.2)(@pixi/display@7.3.2)(@pixi/sprite@7.3.2):
-    resolution: {integrity: sha512-tWVVb/rMIx5AczfUrVxa0dZaIufP5C0IOL7IGfFUDQqDu5JSAUC0mwLe4F12jAXBVsqYhCGYx5bIHbPiI5vcSQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/sprite-tiling/-/sprite-tiling-7.3.2.tgz}
-    id: registry.npmmirror.com/@pixi/sprite-tiling/7.3.2
+  registry.npmmirror.com/@pixi/sprite-tiling@7.1.4:
+    resolution: {integrity: sha512-MtCZYkAXr4BwAJac8DY1KFTD/oaPIB7GVnw30+oMQ0qE8hp2QcgcmzwRZ3Ln7ll8sOQzbg2H2WMZylqHG+yeOw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/sprite-tiling/-/sprite-tiling-7.1.4.tgz}
     name: '@pixi/sprite-tiling'
-    version: 7.3.2
-    peerDependencies:
-      '@pixi/core': 7.3.2
-      '@pixi/display': 7.3.2
-      '@pixi/sprite': 7.3.2
-    dependencies:
-      '@pixi/core': registry.npmmirror.com/@pixi/core@7.3.2
-      '@pixi/display': registry.npmmirror.com/@pixi/display@7.3.2(@pixi/core@7.3.2)
-      '@pixi/sprite': registry.npmmirror.com/@pixi/sprite@7.3.2(@pixi/core@7.3.2)(@pixi/display@7.3.2)
+    version: 7.1.4
+
+  registry.npmmirror.com/@pixi/sprite@7.1.4:
+    resolution: {integrity: sha512-I6skGi8ZVgfjKGnpZBZg7pevpkNnqAJibXFsDZ31/lCAmDbK3fx+K4sRcYR5JxuQN6nW52WsuWKZF1cgt/lNuA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/sprite/-/sprite-7.1.4.tgz}
+    name: '@pixi/sprite'
+    version: 7.1.4
 
   registry.npmmirror.com/@pixi/sprite@7.3.2(@pixi/core@7.3.2)(@pixi/display@7.3.2):
     resolution: {integrity: sha512-IpWTKXExJNXVcY7ITopJ+JW48DahdbCo/81D2IYzBImq3jyiJM2Km5EoJgvAM5ZQ3Ev3KPPIBzYLD+HoPWcxdw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/sprite/-/sprite-7.3.2.tgz}
@@ -913,18 +878,17 @@ packages:
     dependencies:
       '@pixi/core': registry.npmmirror.com/@pixi/core@7.3.2
       '@pixi/display': registry.npmmirror.com/@pixi/display@7.3.2(@pixi/core@7.3.2)
+    dev: true
 
-  registry.npmmirror.com/@pixi/spritesheet@7.3.2(@pixi/assets@7.3.2)(@pixi/core@7.3.2):
-    resolution: {integrity: sha512-UkwqrPYDqrEdK5ub9qn/9VBvt5caA8ffV5iYR6ssCvrpaQovBKmS+b5pr/BYf8xNTExDpR3OmPIo8iDEYWWLuw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/spritesheet/-/spritesheet-7.3.2.tgz}
-    id: registry.npmmirror.com/@pixi/spritesheet/7.3.2
+  registry.npmmirror.com/@pixi/spritesheet@7.1.4:
+    resolution: {integrity: sha512-L9gBE8iuVpF6zOc27e2UH5JHGv+dLNudxMfJQdr7b+inBBK+YP5gwBkIEq87zRISqlcYJcrC+GbQmtQwLcKR4Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/spritesheet/-/spritesheet-7.1.4.tgz}
     name: '@pixi/spritesheet'
-    version: 7.3.2
-    peerDependencies:
-      '@pixi/assets': 7.3.2
-      '@pixi/core': 7.3.2
-    dependencies:
-      '@pixi/assets': registry.npmmirror.com/@pixi/assets@7.3.2(@pixi/core@7.3.2)(@pixi/utils@7.3.2)
-      '@pixi/core': registry.npmmirror.com/@pixi/core@7.3.2
+    version: 7.1.4
+
+  registry.npmmirror.com/@pixi/text-bitmap@7.1.4:
+    resolution: {integrity: sha512-bltYKvN1wQN6kHH8MOh5KDBQIZIWYjS8eGI9j9y6JdI0hu5lRmjKKFdsFaEn32MeW7xABfGICOFEJVp61IJjAQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/text-bitmap/-/text-bitmap-7.1.4.tgz}
+    name: '@pixi/text-bitmap'
+    version: 7.1.4
 
   registry.npmmirror.com/@pixi/text-bitmap@7.3.2(@pixi/assets@7.3.2)(@pixi/core@7.3.2)(@pixi/display@7.3.2)(@pixi/mesh@7.3.2)(@pixi/text@7.3.2):
     resolution: {integrity: sha512-p8KLgtZSPowWU/Zj+GVtfsUT8uGYo4TtKKYbLoWuxkRA5Pc1+4C9/rV/EOSFfoZIdW5C+iFg5VxRgBllUQf+aA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/text-bitmap/-/text-bitmap-7.3.2.tgz}
@@ -943,6 +907,7 @@ packages:
       '@pixi/display': registry.npmmirror.com/@pixi/display@7.3.2(@pixi/core@7.3.2)
       '@pixi/mesh': registry.npmmirror.com/@pixi/mesh@7.3.2(@pixi/core@7.3.2)(@pixi/display@7.3.2)
       '@pixi/text': registry.npmmirror.com/@pixi/text@7.3.2(@pixi/core@7.3.2)(@pixi/sprite@7.3.2)
+    dev: true
 
   registry.npmmirror.com/@pixi/text-html@7.3.2(@pixi/core@7.3.2)(@pixi/display@7.3.2)(@pixi/sprite@7.3.2)(@pixi/text@7.3.2):
     resolution: {integrity: sha512-IYhBWEPOvqUtlHkS5/c1Hseuricj5jrrGd21ivcvHmcnK/x2m+CRGvvzeBp1mqoYBnDbQVrD2wSXSe4Dv9tEJA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/text-html/-/text-html-7.3.2.tgz}
@@ -959,6 +924,12 @@ packages:
       '@pixi/display': registry.npmmirror.com/@pixi/display@7.3.2(@pixi/core@7.3.2)
       '@pixi/sprite': registry.npmmirror.com/@pixi/sprite@7.3.2(@pixi/core@7.3.2)(@pixi/display@7.3.2)
       '@pixi/text': registry.npmmirror.com/@pixi/text@7.3.2(@pixi/core@7.3.2)(@pixi/sprite@7.3.2)
+    dev: true
+
+  registry.npmmirror.com/@pixi/text@7.1.4:
+    resolution: {integrity: sha512-nMDLsv0JdIZZ1nKJWsRNqtEuP/zOSF5nTq60wRnz3WGt4AHajlvratxT+NikS7Um8UiZWDa6dB2NoCvk8rrJxw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/text/-/text-7.1.4.tgz}
+    name: '@pixi/text'
+    version: 7.1.4
 
   registry.npmmirror.com/@pixi/text@7.3.2(@pixi/core@7.3.2)(@pixi/sprite@7.3.2):
     resolution: {integrity: sha512-LdtNj+K5tPB/0UcDcO52M/C7xhwFTGFhtdF42fPhRuJawM23M3zm1Y8PapXv+mury+IxCHT1w30YlAi0qTVpKQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/text/-/text-7.3.2.tgz}
@@ -971,6 +942,16 @@ packages:
     dependencies:
       '@pixi/core': registry.npmmirror.com/@pixi/core@7.3.2
       '@pixi/sprite': registry.npmmirror.com/@pixi/sprite@7.3.2(@pixi/core@7.3.2)(@pixi/display@7.3.2)
+    dev: true
+
+  registry.npmmirror.com/@pixi/ticker@7.1.4:
+    resolution: {integrity: sha512-u9pS3KAiQ14mN6PmiCEF+Ocmli/lAJLm/tzLcaBrBeBQqJ3jCZreoSbZ8znRY29YkdWMazPk+anUEGX1EsU5sg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/ticker/-/ticker-7.1.4.tgz}
+    name: '@pixi/ticker'
+    version: 7.1.4
+    dependencies:
+      '@pixi/extensions': registry.npmmirror.com/@pixi/extensions@7.1.4
+      '@pixi/settings': registry.npmmirror.com/@pixi/settings@7.1.4
+      '@pixi/utils': registry.npmmirror.com/@pixi/utils@7.1.4
 
   registry.npmmirror.com/@pixi/ticker@7.3.2:
     resolution: {integrity: sha512-5kIPhBeXwDJohCzKzJJ6T7f1oAGbHAgeiwOjlTO+9lNXUX8ZPj0407V3syuF+64kFqJzIBCznBRpI+fmT4c9SA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/ticker/-/ticker-7.3.2.tgz}
@@ -980,6 +961,7 @@ packages:
       '@pixi/extensions': registry.npmmirror.com/@pixi/extensions@7.3.2
       '@pixi/settings': registry.npmmirror.com/@pixi/settings@7.3.2
       '@pixi/utils': registry.npmmirror.com/@pixi/utils@7.3.2
+    dev: true
 
   registry.npmmirror.com/@pixi/ui@0.10.1(@pixi/core@7.3.2)(@pixi/display@7.3.2)(@pixi/events@7.3.2)(@pixi/graphics@7.3.2)(@pixi/sprite@7.3.2)(@pixi/text-bitmap@7.3.2)(@pixi/text-html@7.3.2)(@pixi/text@7.3.2):
     resolution: {integrity: sha512-PzE9Y/GX0inw5n+9lYcvYI++QMIDVf9hLEd5CNc/lIlimnyOuNHdNJuRCJHfDmBVtWZa9kMWzqIetv0a7k+0tQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/ui/-/ui-0.10.1.tgz}
@@ -1008,6 +990,18 @@ packages:
       typed-signals: registry.npmmirror.com/typed-signals@2.5.0
     dev: true
 
+  registry.npmmirror.com/@pixi/utils@7.1.4:
+    resolution: {integrity: sha512-n02nsAWcOp8+2yWFQ7CjWctVnGFs8jpD9A8H+RFcvdy2kdjApAU8+HsuJIrl/wfrwnTRxUzYatTRejz0jD9bKA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/utils/-/utils-7.1.4.tgz}
+    name: '@pixi/utils'
+    version: 7.1.4
+    dependencies:
+      '@pixi/constants': registry.npmmirror.com/@pixi/constants@7.1.4
+      '@pixi/settings': registry.npmmirror.com/@pixi/settings@7.1.4
+      '@types/earcut': registry.npmmirror.com/@types/earcut@2.1.4
+      earcut: registry.npmmirror.com/earcut@2.2.4
+      eventemitter3: registry.npmmirror.com/eventemitter3@4.0.7
+      url: registry.npmmirror.com/url@0.11.3
+
   registry.npmmirror.com/@pixi/utils@7.3.2:
     resolution: {integrity: sha512-KhNvj9YcY7Zi2dTKZgDpx8C6OxKKR541vwtG6JgdBZZYDeMBOIghN2Vi5zn4diW5BhDfHBmdSJ1wZXEtE2MDwg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pixi/utils/-/utils-7.3.2.tgz}
     name: '@pixi/utils'
@@ -1020,6 +1014,7 @@ packages:
       earcut: registry.npmmirror.com/earcut@2.2.4
       eventemitter3: registry.npmmirror.com/eventemitter3@4.0.7
       url: registry.npmmirror.com/url@0.11.3
+    dev: true
 
   registry.npmmirror.com/@theatre/core@0.7.0:
     resolution: {integrity: sha512-CXRUxOaKQtb4biQa6+I6PW8wPsFj9NsZgr7VdosSB20WxlanQ8/ZR0xH/A3A3oCHdCXKaZxQlNcEOeByk4Yf/g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@theatre/core/-/core-0.7.0.tgz}
@@ -1088,7 +1083,7 @@ packages:
     version: 0.0.20
     dev: true
 
-  registry.npmmirror.com/@vitejs/plugin-vue@4.3.1(vite@4.5.0)(vue@3.3.9):
+  registry.npmmirror.com/@vitejs/plugin-vue@4.3.1(vite@4.5.0)(vue@3.3.7):
     resolution: {integrity: sha512-tUBEtWcF7wFtII7ayNiLNDTCE1X1afySEo+XNVMNkFXaThENyCowIEX095QqbJZGTgoOcSVDJGlnde2NG4jtbQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vitejs/plugin-vue/-/plugin-vue-4.3.1.tgz}
     id: registry.npmmirror.com/@vitejs/plugin-vue/4.3.1
     name: '@vitejs/plugin-vue'
@@ -1099,50 +1094,50 @@ packages:
       vue: ^3.2.25
     dependencies:
       vite: registry.npmmirror.com/vite@4.5.0
-      vue: registry.npmmirror.com/vue@3.3.9
+      vue: registry.npmmirror.com/vue@3.3.7
     dev: true
 
-  registry.npmmirror.com/@vue/compiler-core@3.3.9:
-    resolution: {integrity: sha512-+/Lf68Vr/nFBA6ol4xOtJrW+BQWv3QWKfRwGSm70jtXwfhZNF4R/eRgyVJYoxFRhdCTk/F6g99BP0ffPgZihfQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vue/compiler-core/-/compiler-core-3.3.9.tgz}
+  registry.npmmirror.com/@vue/compiler-core@3.3.7:
+    resolution: {integrity: sha512-pACdY6YnTNVLXsB86YD8OF9ihwpolzhhtdLVHhBL6do/ykr6kKXNYABRtNMGrsQXpEXXyAdwvWWkuTbs4MFtPQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vue/compiler-core/-/compiler-core-3.3.7.tgz}
     name: '@vue/compiler-core'
-    version: 3.3.9
+    version: 3.3.7
     dependencies:
       '@babel/parser': registry.npmmirror.com/@babel/parser@7.23.4
-      '@vue/shared': registry.npmmirror.com/@vue/shared@3.3.9
+      '@vue/shared': registry.npmmirror.com/@vue/shared@3.3.7
       estree-walker: registry.npmmirror.com/estree-walker@2.0.2
       source-map-js: registry.npmmirror.com/source-map-js@1.0.2
 
-  registry.npmmirror.com/@vue/compiler-dom@3.3.9:
-    resolution: {integrity: sha512-nfWubTtLXuT4iBeDSZ5J3m218MjOy42Vp2pmKVuBKo2/BLcrFUX8nCSr/bKRFiJ32R8qbdnnnBgRn9AdU5v0Sg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vue/compiler-dom/-/compiler-dom-3.3.9.tgz}
+  registry.npmmirror.com/@vue/compiler-dom@3.3.7:
+    resolution: {integrity: sha512-0LwkyJjnUPssXv/d1vNJ0PKfBlDoQs7n81CbO6Q0zdL7H1EzqYRrTVXDqdBVqro0aJjo/FOa1qBAPVI4PGSHBw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vue/compiler-dom/-/compiler-dom-3.3.7.tgz}
     name: '@vue/compiler-dom'
-    version: 3.3.9
+    version: 3.3.7
     dependencies:
-      '@vue/compiler-core': registry.npmmirror.com/@vue/compiler-core@3.3.9
-      '@vue/shared': registry.npmmirror.com/@vue/shared@3.3.9
+      '@vue/compiler-core': registry.npmmirror.com/@vue/compiler-core@3.3.7
+      '@vue/shared': registry.npmmirror.com/@vue/shared@3.3.7
 
-  registry.npmmirror.com/@vue/compiler-sfc@3.3.9:
-    resolution: {integrity: sha512-wy0CNc8z4ihoDzjASCOCsQuzW0A/HP27+0MDSSICMjVIFzk/rFViezkR3dzH+miS2NDEz8ywMdbjO5ylhOLI2A==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vue/compiler-sfc/-/compiler-sfc-3.3.9.tgz}
+  registry.npmmirror.com/@vue/compiler-sfc@3.3.7:
+    resolution: {integrity: sha512-7pfldWy/J75U/ZyYIXRVqvLRw3vmfxDo2YLMwVtWVNew8Sm8d6wodM+OYFq4ll/UxfqVr0XKiVwti32PCrruAw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vue/compiler-sfc/-/compiler-sfc-3.3.7.tgz}
     name: '@vue/compiler-sfc'
-    version: 3.3.9
+    version: 3.3.7
     dependencies:
       '@babel/parser': registry.npmmirror.com/@babel/parser@7.23.4
-      '@vue/compiler-core': registry.npmmirror.com/@vue/compiler-core@3.3.9
-      '@vue/compiler-dom': registry.npmmirror.com/@vue/compiler-dom@3.3.9
-      '@vue/compiler-ssr': registry.npmmirror.com/@vue/compiler-ssr@3.3.9
-      '@vue/reactivity-transform': registry.npmmirror.com/@vue/reactivity-transform@3.3.9
-      '@vue/shared': registry.npmmirror.com/@vue/shared@3.3.9
+      '@vue/compiler-core': registry.npmmirror.com/@vue/compiler-core@3.3.7
+      '@vue/compiler-dom': registry.npmmirror.com/@vue/compiler-dom@3.3.7
+      '@vue/compiler-ssr': registry.npmmirror.com/@vue/compiler-ssr@3.3.7
+      '@vue/reactivity-transform': registry.npmmirror.com/@vue/reactivity-transform@3.3.7
+      '@vue/shared': registry.npmmirror.com/@vue/shared@3.3.7
       estree-walker: registry.npmmirror.com/estree-walker@2.0.2
       magic-string: registry.npmmirror.com/magic-string@0.30.5
       postcss: registry.npmmirror.com/postcss@8.4.31
       source-map-js: registry.npmmirror.com/source-map-js@1.0.2
 
-  registry.npmmirror.com/@vue/compiler-ssr@3.3.9:
-    resolution: {integrity: sha512-NO5oobAw78R0G4SODY5A502MGnDNiDjf6qvhn7zD7TJGc8XDeIEw4fg6JU705jZ/YhuokBKz0A5a/FL/XZU73g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vue/compiler-ssr/-/compiler-ssr-3.3.9.tgz}
+  registry.npmmirror.com/@vue/compiler-ssr@3.3.7:
+    resolution: {integrity: sha512-TxOfNVVeH3zgBc82kcUv+emNHo+vKnlRrkv8YvQU5+Y5LJGJwSNzcmLUoxD/dNzv0bhQ/F0s+InlgV0NrApJZg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vue/compiler-ssr/-/compiler-ssr-3.3.7.tgz}
     name: '@vue/compiler-ssr'
-    version: 3.3.9
+    version: 3.3.7
     dependencies:
-      '@vue/compiler-dom': registry.npmmirror.com/@vue/compiler-dom@3.3.9
-      '@vue/shared': registry.npmmirror.com/@vue/shared@3.3.9
+      '@vue/compiler-dom': registry.npmmirror.com/@vue/compiler-dom@3.3.7
+      '@vue/shared': registry.npmmirror.com/@vue/shared@3.3.7
 
   registry.npmmirror.com/@vue/devtools-api@6.5.1:
     resolution: {integrity: sha512-+KpckaAQyfbvshdDW5xQylLni1asvNSGme1JFs8I1+/H5pHEhqUKMEQD/qn3Nx5+/nycBq11qAEi8lk+LXI2dA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vue/devtools-api/-/devtools-api-6.5.1.tgz}
@@ -1150,59 +1145,59 @@ packages:
     version: 6.5.1
     dev: true
 
-  registry.npmmirror.com/@vue/reactivity-transform@3.3.9:
-    resolution: {integrity: sha512-HnUFm7Ry6dFa4Lp63DAxTixUp8opMtQr6RxQCpDI1vlh12rkGIeYqMvJtK+IKyEfEOa2I9oCkD1mmsPdaGpdVg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vue/reactivity-transform/-/reactivity-transform-3.3.9.tgz}
+  registry.npmmirror.com/@vue/reactivity-transform@3.3.7:
+    resolution: {integrity: sha512-APhRmLVbgE1VPGtoLQoWBJEaQk4V8JUsqrQihImVqKT+8U6Qi3t5ATcg4Y9wGAPb3kIhetpufyZ1RhwbZCIdDA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vue/reactivity-transform/-/reactivity-transform-3.3.7.tgz}
     name: '@vue/reactivity-transform'
-    version: 3.3.9
+    version: 3.3.7
     dependencies:
       '@babel/parser': registry.npmmirror.com/@babel/parser@7.23.4
-      '@vue/compiler-core': registry.npmmirror.com/@vue/compiler-core@3.3.9
-      '@vue/shared': registry.npmmirror.com/@vue/shared@3.3.9
+      '@vue/compiler-core': registry.npmmirror.com/@vue/compiler-core@3.3.7
+      '@vue/shared': registry.npmmirror.com/@vue/shared@3.3.7
       estree-walker: registry.npmmirror.com/estree-walker@2.0.2
       magic-string: registry.npmmirror.com/magic-string@0.30.5
 
-  registry.npmmirror.com/@vue/reactivity@3.3.9:
-    resolution: {integrity: sha512-VmpIqlNp+aYDg2X0xQhJqHx9YguOmz2UxuUJDckBdQCNkipJvfk9yA75woLWElCa0Jtyec3lAAt49GO0izsphw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vue/reactivity/-/reactivity-3.3.9.tgz}
+  registry.npmmirror.com/@vue/reactivity@3.3.7:
+    resolution: {integrity: sha512-cZNVjWiw00708WqT0zRpyAgduG79dScKEPYJXq2xj/aMtk3SKvL3FBt2QKUlh6EHBJ1m8RhBY+ikBUzwc7/khg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vue/reactivity/-/reactivity-3.3.7.tgz}
     name: '@vue/reactivity'
-    version: 3.3.9
+    version: 3.3.7
     dependencies:
-      '@vue/shared': registry.npmmirror.com/@vue/shared@3.3.9
+      '@vue/shared': registry.npmmirror.com/@vue/shared@3.3.7
 
-  registry.npmmirror.com/@vue/runtime-core@3.3.9:
-    resolution: {integrity: sha512-xxaG9KvPm3GTRuM4ZyU8Tc+pMVzcu6eeoSRQJ9IE7NmCcClW6z4B3Ij6L4EDl80sxe/arTtQ6YmgiO4UZqRc+w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vue/runtime-core/-/runtime-core-3.3.9.tgz}
+  registry.npmmirror.com/@vue/runtime-core@3.3.7:
+    resolution: {integrity: sha512-LHq9du3ubLZFdK/BP0Ysy3zhHqRfBn80Uc+T5Hz3maFJBGhci1MafccnL3rpd5/3wVfRHAe6c+PnlO2PAavPTQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vue/runtime-core/-/runtime-core-3.3.7.tgz}
     name: '@vue/runtime-core'
-    version: 3.3.9
+    version: 3.3.7
     dependencies:
-      '@vue/reactivity': registry.npmmirror.com/@vue/reactivity@3.3.9
-      '@vue/shared': registry.npmmirror.com/@vue/shared@3.3.9
+      '@vue/reactivity': registry.npmmirror.com/@vue/reactivity@3.3.7
+      '@vue/shared': registry.npmmirror.com/@vue/shared@3.3.7
 
-  registry.npmmirror.com/@vue/runtime-dom@3.3.9:
-    resolution: {integrity: sha512-e7LIfcxYSWbV6BK1wQv9qJyxprC75EvSqF/kQKe6bdZEDNValzeRXEVgiX7AHI6hZ59HA4h7WT5CGvm69vzJTQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vue/runtime-dom/-/runtime-dom-3.3.9.tgz}
+  registry.npmmirror.com/@vue/runtime-dom@3.3.7:
+    resolution: {integrity: sha512-PFQU1oeJxikdDmrfoNQay5nD4tcPNYixUBruZzVX/l0eyZvFKElZUjW4KctCcs52nnpMGO6UDK+jF5oV4GT5Lw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vue/runtime-dom/-/runtime-dom-3.3.7.tgz}
     name: '@vue/runtime-dom'
-    version: 3.3.9
+    version: 3.3.7
     dependencies:
-      '@vue/runtime-core': registry.npmmirror.com/@vue/runtime-core@3.3.9
-      '@vue/shared': registry.npmmirror.com/@vue/shared@3.3.9
+      '@vue/runtime-core': registry.npmmirror.com/@vue/runtime-core@3.3.7
+      '@vue/shared': registry.npmmirror.com/@vue/shared@3.3.7
       csstype: registry.npmmirror.com/csstype@3.1.2
 
-  registry.npmmirror.com/@vue/server-renderer@3.3.9(vue@3.3.9):
-    resolution: {integrity: sha512-w0zT/s5l3Oa3ZjtLW88eO4uV6AQFqU8X5GOgzq7SkQQu6vVr+8tfm+OI2kDBplS/W/XgCBuFXiPw6T5EdwXP0A==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vue/server-renderer/-/server-renderer-3.3.9.tgz}
-    id: registry.npmmirror.com/@vue/server-renderer/3.3.9
+  registry.npmmirror.com/@vue/server-renderer@3.3.7(vue@3.3.7):
+    resolution: {integrity: sha512-UlpKDInd1hIZiNuVVVvLgxpfnSouxKQOSE2bOfQpBuGwxRV/JqqTCyyjXUWiwtVMyeRaZhOYYqntxElk8FhBhw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vue/server-renderer/-/server-renderer-3.3.7.tgz}
+    id: registry.npmmirror.com/@vue/server-renderer/3.3.7
     name: '@vue/server-renderer'
-    version: 3.3.9
+    version: 3.3.7
     peerDependencies:
-      vue: 3.3.9
+      vue: 3.3.7
     dependencies:
-      '@vue/compiler-ssr': registry.npmmirror.com/@vue/compiler-ssr@3.3.9
-      '@vue/shared': registry.npmmirror.com/@vue/shared@3.3.9
-      vue: registry.npmmirror.com/vue@3.3.9
+      '@vue/compiler-ssr': registry.npmmirror.com/@vue/compiler-ssr@3.3.7
+      '@vue/shared': registry.npmmirror.com/@vue/shared@3.3.7
+      vue: registry.npmmirror.com/vue@3.3.7
 
-  registry.npmmirror.com/@vue/shared@3.3.9:
-    resolution: {integrity: sha512-ZE0VTIR0LmYgeyhurPTpy4KzKsuDyQbMSdM49eKkMnT5X4VfFBLysMzjIZhLEFQYjjOVVfbvUDHckwjDFiO2eA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vue/shared/-/shared-3.3.9.tgz}
+  registry.npmmirror.com/@vue/shared@3.3.7:
+    resolution: {integrity: sha512-N/tbkINRUDExgcPTBvxNkvHGu504k8lzlNQRITVnm6YjOjwa4r0nnbd4Jb01sNpur5hAllyRJzSK5PvB9PPwRg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vue/shared/-/shared-3.3.7.tgz}
     name: '@vue/shared'
-    version: 3.3.9
+    version: 3.3.7
 
-  registry.npmmirror.com/@vueuse/core@10.6.1(vue@3.3.9):
+  registry.npmmirror.com/@vueuse/core@10.6.1(vue@3.3.7):
     resolution: {integrity: sha512-Pc26IJbqgC9VG1u6VY/xrXXfxD33hnvxBnKrLlA2LJlyHII+BSrRoTPJgGYq7qZOu61itITFUnm6QbacwZ4H8Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vueuse/core/-/core-10.6.1.tgz}
     id: registry.npmmirror.com/@vueuse/core/10.6.1
     name: '@vueuse/core'
@@ -1210,14 +1205,14 @@ packages:
     dependencies:
       '@types/web-bluetooth': registry.npmmirror.com/@types/web-bluetooth@0.0.20
       '@vueuse/metadata': registry.npmmirror.com/@vueuse/metadata@10.6.1
-      '@vueuse/shared': registry.npmmirror.com/@vueuse/shared@10.6.1(vue@3.3.9)
-      vue-demi: registry.npmmirror.com/vue-demi@0.14.6(vue@3.3.9)
+      '@vueuse/shared': registry.npmmirror.com/@vueuse/shared@10.6.1(vue@3.3.7)
+      vue-demi: registry.npmmirror.com/vue-demi@0.14.6(vue@3.3.7)
     transitivePeerDependencies:
       - '@vue/composition-api'
       - vue
     dev: true
 
-  registry.npmmirror.com/@vueuse/integrations@10.6.1(focus-trap@7.5.4)(vue@3.3.9):
+  registry.npmmirror.com/@vueuse/integrations@10.6.1(focus-trap@7.5.4)(vue@3.3.7):
     resolution: {integrity: sha512-mPDupuofMJ4DPmtX/FfP1MajmWRzYDv8WSaTCo8LQ5kFznjWgmUQ16ApjYqgMquqffNY6+IRMdMgosLDRZOSZA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vueuse/integrations/-/integrations-10.6.1.tgz}
     id: registry.npmmirror.com/@vueuse/integrations/10.6.1
     name: '@vueuse/integrations'
@@ -1261,10 +1256,10 @@ packages:
       universal-cookie:
         optional: true
     dependencies:
-      '@vueuse/core': registry.npmmirror.com/@vueuse/core@10.6.1(vue@3.3.9)
-      '@vueuse/shared': registry.npmmirror.com/@vueuse/shared@10.6.1(vue@3.3.9)
+      '@vueuse/core': registry.npmmirror.com/@vueuse/core@10.6.1(vue@3.3.7)
+      '@vueuse/shared': registry.npmmirror.com/@vueuse/shared@10.6.1(vue@3.3.7)
       focus-trap: registry.npmmirror.com/focus-trap@7.5.4
-      vue-demi: registry.npmmirror.com/vue-demi@0.14.6(vue@3.3.9)
+      vue-demi: registry.npmmirror.com/vue-demi@0.14.6(vue@3.3.7)
     transitivePeerDependencies:
       - '@vue/composition-api'
       - vue
@@ -1276,13 +1271,13 @@ packages:
     version: 10.6.1
     dev: true
 
-  registry.npmmirror.com/@vueuse/shared@10.6.1(vue@3.3.9):
+  registry.npmmirror.com/@vueuse/shared@10.6.1(vue@3.3.7):
     resolution: {integrity: sha512-TECVDTIedFlL0NUfHWncf3zF9Gc4VfdxfQc8JFwoVZQmxpONhLxFrlm0eHQeidHj4rdTPL3KXJa0TZCk1wnc5Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vueuse/shared/-/shared-10.6.1.tgz}
     id: registry.npmmirror.com/@vueuse/shared/10.6.1
     name: '@vueuse/shared'
     version: 10.6.1
     dependencies:
-      vue-demi: registry.npmmirror.com/vue-demi@0.14.6(vue@3.3.9)
+      vue-demi: registry.npmmirror.com/vue-demi@0.14.6(vue@3.3.7)
     transitivePeerDependencies:
       - '@vue/composition-api'
       - vue
@@ -1457,6 +1452,7 @@ packages:
     resolution: {integrity: sha512-VaFW53yt8QO61k2WJui0dHf4SlL8lxBofUuUmwBo0ljPk0Drz2TiuDW4jo3wDcv41qy/SxrJ+VAzJ/qYqsmzRw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/ismobilejs/-/ismobilejs-1.1.1.tgz}
     name: ismobilejs
     version: 1.1.1
+    dev: true
 
   registry.npmmirror.com/jsonc-parser@3.2.0:
     resolution: {integrity: sha512-gfFQZrcTc8CnKXp6Y4/CBT3fTc0OVuDofpre4aEeEpSBPV5X5v4+Vmx+8snU7RLPrNHPKSgLxGo9YuQzz20o+w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jsonc-parser/-/jsonc-parser-3.2.0.tgz}
@@ -1506,44 +1502,40 @@ packages:
     name: picocolors
     version: 1.0.0
 
-  registry.npmmirror.com/pixi.js@7.3.2(@pixi/utils@7.3.2):
-    resolution: {integrity: sha512-GJickUrT3UcBInGT1CU6cv2oktCdocE5QM74CD3t+weiJPPWIzleNlp7zrBR5QIDdU6bEO8CUgUXH2Y9QvlCMw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/pixi.js/-/pixi.js-7.3.2.tgz}
-    id: registry.npmmirror.com/pixi.js/7.3.2
+  registry.npmmirror.com/pixi.js@7.1.4:
+    resolution: {integrity: sha512-hWV60RLU2yTZc9uzO39WKnCWQKkNqwJkbamXd9IcgBvzOJ5pqIrmQ7xVUI+Nx76IJGXFUtkbzMObaYwzK3V7lw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/pixi.js/-/pixi.js-7.1.4.tgz}
     name: pixi.js
-    version: 7.3.2
+    version: 7.1.4
     dependencies:
-      '@pixi/accessibility': registry.npmmirror.com/@pixi/accessibility@7.3.2(@pixi/core@7.3.2)(@pixi/display@7.3.2)(@pixi/events@7.3.2)
-      '@pixi/app': registry.npmmirror.com/@pixi/app@7.3.2(@pixi/core@7.3.2)(@pixi/display@7.3.2)
-      '@pixi/assets': registry.npmmirror.com/@pixi/assets@7.3.2(@pixi/core@7.3.2)(@pixi/utils@7.3.2)
-      '@pixi/compressed-textures': registry.npmmirror.com/@pixi/compressed-textures@7.3.2(@pixi/assets@7.3.2)(@pixi/core@7.3.2)
-      '@pixi/core': registry.npmmirror.com/@pixi/core@7.3.2
-      '@pixi/display': registry.npmmirror.com/@pixi/display@7.3.2(@pixi/core@7.3.2)
-      '@pixi/events': registry.npmmirror.com/@pixi/events@7.3.2(@pixi/core@7.3.2)(@pixi/display@7.3.2)
-      '@pixi/extensions': registry.npmmirror.com/@pixi/extensions@7.3.2
-      '@pixi/extract': registry.npmmirror.com/@pixi/extract@7.3.2(@pixi/core@7.3.2)
-      '@pixi/filter-alpha': registry.npmmirror.com/@pixi/filter-alpha@7.3.2(@pixi/core@7.3.2)
-      '@pixi/filter-blur': registry.npmmirror.com/@pixi/filter-blur@7.3.2(@pixi/core@7.3.2)
-      '@pixi/filter-color-matrix': registry.npmmirror.com/@pixi/filter-color-matrix@7.3.2(@pixi/core@7.3.2)
-      '@pixi/filter-displacement': registry.npmmirror.com/@pixi/filter-displacement@7.3.2(@pixi/core@7.3.2)
-      '@pixi/filter-fxaa': registry.npmmirror.com/@pixi/filter-fxaa@7.3.2(@pixi/core@7.3.2)
-      '@pixi/filter-noise': registry.npmmirror.com/@pixi/filter-noise@7.3.2(@pixi/core@7.3.2)
-      '@pixi/graphics': registry.npmmirror.com/@pixi/graphics@7.3.2(@pixi/core@7.3.2)(@pixi/display@7.3.2)(@pixi/sprite@7.3.2)
-      '@pixi/mesh': registry.npmmirror.com/@pixi/mesh@7.3.2(@pixi/core@7.3.2)(@pixi/display@7.3.2)
-      '@pixi/mesh-extras': registry.npmmirror.com/@pixi/mesh-extras@7.3.2(@pixi/core@7.3.2)(@pixi/mesh@7.3.2)
-      '@pixi/mixin-cache-as-bitmap': registry.npmmirror.com/@pixi/mixin-cache-as-bitmap@7.3.2(@pixi/core@7.3.2)(@pixi/display@7.3.2)(@pixi/sprite@7.3.2)
-      '@pixi/mixin-get-child-by-name': registry.npmmirror.com/@pixi/mixin-get-child-by-name@7.3.2(@pixi/display@7.3.2)
-      '@pixi/mixin-get-global-position': registry.npmmirror.com/@pixi/mixin-get-global-position@7.3.2(@pixi/core@7.3.2)(@pixi/display@7.3.2)
-      '@pixi/particle-container': registry.npmmirror.com/@pixi/particle-container@7.3.2(@pixi/core@7.3.2)(@pixi/display@7.3.2)(@pixi/sprite@7.3.2)
-      '@pixi/prepare': registry.npmmirror.com/@pixi/prepare@7.3.2(@pixi/core@7.3.2)(@pixi/display@7.3.2)(@pixi/graphics@7.3.2)(@pixi/text@7.3.2)
-      '@pixi/sprite': registry.npmmirror.com/@pixi/sprite@7.3.2(@pixi/core@7.3.2)(@pixi/display@7.3.2)
-      '@pixi/sprite-animated': registry.npmmirror.com/@pixi/sprite-animated@7.3.2(@pixi/core@7.3.2)(@pixi/sprite@7.3.2)
-      '@pixi/sprite-tiling': registry.npmmirror.com/@pixi/sprite-tiling@7.3.2(@pixi/core@7.3.2)(@pixi/display@7.3.2)(@pixi/sprite@7.3.2)
-      '@pixi/spritesheet': registry.npmmirror.com/@pixi/spritesheet@7.3.2(@pixi/assets@7.3.2)(@pixi/core@7.3.2)
-      '@pixi/text': registry.npmmirror.com/@pixi/text@7.3.2(@pixi/core@7.3.2)(@pixi/sprite@7.3.2)
-      '@pixi/text-bitmap': registry.npmmirror.com/@pixi/text-bitmap@7.3.2(@pixi/assets@7.3.2)(@pixi/core@7.3.2)(@pixi/display@7.3.2)(@pixi/mesh@7.3.2)(@pixi/text@7.3.2)
-      '@pixi/text-html': registry.npmmirror.com/@pixi/text-html@7.3.2(@pixi/core@7.3.2)(@pixi/display@7.3.2)(@pixi/sprite@7.3.2)(@pixi/text@7.3.2)
-    transitivePeerDependencies:
-      - '@pixi/utils'
+      '@pixi/accessibility': registry.npmmirror.com/@pixi/accessibility@7.1.4
+      '@pixi/app': registry.npmmirror.com/@pixi/app@7.1.4
+      '@pixi/assets': registry.npmmirror.com/@pixi/assets@7.1.4
+      '@pixi/compressed-textures': registry.npmmirror.com/@pixi/compressed-textures@7.1.4
+      '@pixi/core': registry.npmmirror.com/@pixi/core@7.1.4
+      '@pixi/display': registry.npmmirror.com/@pixi/display@7.1.4
+      '@pixi/events': registry.npmmirror.com/@pixi/events@7.1.4
+      '@pixi/extensions': registry.npmmirror.com/@pixi/extensions@7.1.4
+      '@pixi/extract': registry.npmmirror.com/@pixi/extract@7.1.4
+      '@pixi/filter-alpha': registry.npmmirror.com/@pixi/filter-alpha@7.1.4
+      '@pixi/filter-blur': registry.npmmirror.com/@pixi/filter-blur@7.1.4
+      '@pixi/filter-color-matrix': registry.npmmirror.com/@pixi/filter-color-matrix@7.1.4
+      '@pixi/filter-displacement': registry.npmmirror.com/@pixi/filter-displacement@7.1.4
+      '@pixi/filter-fxaa': registry.npmmirror.com/@pixi/filter-fxaa@7.1.4
+      '@pixi/filter-noise': registry.npmmirror.com/@pixi/filter-noise@7.1.4
+      '@pixi/graphics': registry.npmmirror.com/@pixi/graphics@7.1.4
+      '@pixi/mesh': registry.npmmirror.com/@pixi/mesh@7.1.4
+      '@pixi/mesh-extras': registry.npmmirror.com/@pixi/mesh-extras@7.1.4
+      '@pixi/mixin-cache-as-bitmap': registry.npmmirror.com/@pixi/mixin-cache-as-bitmap@7.1.4
+      '@pixi/mixin-get-child-by-name': registry.npmmirror.com/@pixi/mixin-get-child-by-name@7.1.4
+      '@pixi/mixin-get-global-position': registry.npmmirror.com/@pixi/mixin-get-global-position@7.1.4
+      '@pixi/particle-container': registry.npmmirror.com/@pixi/particle-container@7.1.4
+      '@pixi/prepare': registry.npmmirror.com/@pixi/prepare@7.1.4
+      '@pixi/sprite': registry.npmmirror.com/@pixi/sprite@7.1.4
+      '@pixi/sprite-animated': registry.npmmirror.com/@pixi/sprite-animated@7.1.4
+      '@pixi/sprite-tiling': registry.npmmirror.com/@pixi/sprite-tiling@7.1.4
+      '@pixi/spritesheet': registry.npmmirror.com/@pixi/spritesheet@7.1.4
+      '@pixi/text': registry.npmmirror.com/@pixi/text@7.1.4
+      '@pixi/text-bitmap': registry.npmmirror.com/@pixi/text-bitmap@7.1.4
 
   registry.npmmirror.com/postcss@8.4.31:
     resolution: {integrity: sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/postcss/-/postcss-8.4.31.tgz}
@@ -1651,11 +1643,11 @@ packages:
     version: 2.5.0
     dev: true
 
-  registry.npmmirror.com/typescript@5.3.2:
-    resolution: {integrity: sha512-6l+RyNy7oAHDfxC4FzSJcz9vnjTKxrLpDG5M2Vu4SHRVNg6xzqZp6LYSR9zjqQTu8DU/f5xwxUdADOkbrIX2gQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/typescript/-/typescript-5.3.2.tgz}
+  registry.npmmirror.com/typescript@5.0.2:
+    resolution: {integrity: sha512-wVORMBGO/FAs/++blGNeAVdbNKtIh1rbBL2EyQ1+J9lClJ93KiiKe8PmFIVdXhHcyv44SL9oglmfeSsndo0jRw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/typescript/-/typescript-5.0.2.tgz}
     name: typescript
-    version: 5.3.2
-    engines: {node: '>=14.17'}
+    version: 5.0.2
+    engines: {node: '>=12.20'}
     hasBin: true
     dev: true
 
@@ -1722,16 +1714,16 @@ packages:
       '@docsearch/css': registry.npmmirror.com/@docsearch/css@3.5.2
       '@docsearch/js': registry.npmmirror.com/@docsearch/js@3.5.2(@algolia/client-search@4.20.0)(search-insights@2.11.0)
       '@types/markdown-it': registry.npmmirror.com/@types/markdown-it@13.0.7
-      '@vitejs/plugin-vue': registry.npmmirror.com/@vitejs/plugin-vue@4.3.1(vite@4.5.0)(vue@3.3.9)
+      '@vitejs/plugin-vue': registry.npmmirror.com/@vitejs/plugin-vue@4.3.1(vite@4.5.0)(vue@3.3.7)
       '@vue/devtools-api': registry.npmmirror.com/@vue/devtools-api@6.5.1
-      '@vueuse/core': registry.npmmirror.com/@vueuse/core@10.6.1(vue@3.3.9)
-      '@vueuse/integrations': registry.npmmirror.com/@vueuse/integrations@10.6.1(focus-trap@7.5.4)(vue@3.3.9)
+      '@vueuse/core': registry.npmmirror.com/@vueuse/core@10.6.1(vue@3.3.7)
+      '@vueuse/integrations': registry.npmmirror.com/@vueuse/integrations@10.6.1(focus-trap@7.5.4)(vue@3.3.7)
       focus-trap: registry.npmmirror.com/focus-trap@7.5.4
       mark.js: registry.npmmirror.com/mark.js@8.11.1
       minisearch: registry.npmmirror.com/minisearch@6.3.0
       shiki: registry.npmmirror.com/shiki@0.14.5
       vite: registry.npmmirror.com/vite@4.5.0
-      vue: registry.npmmirror.com/vue@3.3.9
+      vue: registry.npmmirror.com/vue@3.3.7
     transitivePeerDependencies:
       - '@algolia/client-search'
       - '@types/node'
@@ -1772,7 +1764,7 @@ packages:
     version: 8.0.0
     dev: true
 
-  registry.npmmirror.com/vue-demi@0.14.6(vue@3.3.9):
+  registry.npmmirror.com/vue-demi@0.14.6(vue@3.3.7):
     resolution: {integrity: sha512-8QA7wrYSHKaYgUxDA5ZC24w+eHm3sYCbp0EzcDwKqN3p6HqtTCGR/GVsPyZW92unff4UlcSh++lmqDWN3ZIq4w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vue-demi/-/vue-demi-0.14.6.tgz}
     id: registry.npmmirror.com/vue-demi/0.14.6
     name: vue-demi
@@ -1787,21 +1779,21 @@ packages:
       '@vue/composition-api':
         optional: true
     dependencies:
-      vue: registry.npmmirror.com/vue@3.3.9
+      vue: registry.npmmirror.com/vue@3.3.7
     dev: true
 
-  registry.npmmirror.com/vue@3.3.9:
-    resolution: {integrity: sha512-sy5sLCTR8m6tvUk1/ijri3Yqzgpdsmxgj6n6yl7GXXCXqVbmW2RCXe9atE4cEI6Iv7L89v5f35fZRRr5dChP9w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vue/-/vue-3.3.9.tgz}
+  registry.npmmirror.com/vue@3.3.7:
+    resolution: {integrity: sha512-YEMDia1ZTv1TeBbnu6VybatmSteGOS3A3YgfINOfraCbf85wdKHzscD6HSS/vB4GAtI7sa1XPX7HcQaJ1l24zA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vue/-/vue-3.3.7.tgz}
     name: vue
-    version: 3.3.9
+    version: 3.3.7
     peerDependencies:
       typescript: '*'
     peerDependenciesMeta:
       typescript:
         optional: true
     dependencies:
-      '@vue/compiler-dom': registry.npmmirror.com/@vue/compiler-dom@3.3.9
-      '@vue/compiler-sfc': registry.npmmirror.com/@vue/compiler-sfc@3.3.9
-      '@vue/runtime-dom': registry.npmmirror.com/@vue/runtime-dom@3.3.9
-      '@vue/server-renderer': registry.npmmirror.com/@vue/server-renderer@3.3.9(vue@3.3.9)
-      '@vue/shared': registry.npmmirror.com/@vue/shared@3.3.9
+      '@vue/compiler-dom': registry.npmmirror.com/@vue/compiler-dom@3.3.7
+      '@vue/compiler-sfc': registry.npmmirror.com/@vue/compiler-sfc@3.3.7
+      '@vue/runtime-dom': registry.npmmirror.com/@vue/runtime-dom@3.3.7
+      '@vue/server-renderer': registry.npmmirror.com/@vue/server-renderer@3.3.7(vue@3.3.7)
+      '@vue/shared': registry.npmmirror.com/@vue/shared@3.3.7
