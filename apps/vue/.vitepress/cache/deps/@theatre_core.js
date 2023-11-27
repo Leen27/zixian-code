@@ -1,10 +1,10 @@
 import {
   __commonJS
-} from "./chunk-76J2PTFD.js";
+} from "./chunk-5WWUZCGV.js";
 
-// node_modules/.pnpm/@theatre+dataverse@0.7.0/node_modules/@theatre/dataverse/dist/index.js
+// node_modules/.pnpm/registry.npmmirror.com+@theatre+dataverse@0.7.0/node_modules/@theatre/dataverse/dist/index.js
 var require_dist = __commonJS({
-  "node_modules/.pnpm/@theatre+dataverse@0.7.0/node_modules/@theatre/dataverse/dist/index.js"(exports) {
+  "node_modules/.pnpm/registry.npmmirror.com+@theatre+dataverse@0.7.0/node_modules/@theatre/dataverse/dist/index.js"(exports) {
     var __defProp = Object.defineProperty;
     var __defProps = Object.defineProperties;
     var __getOwnPropDescs = Object.getOwnPropertyDescriptors;
@@ -1439,9 +1439,9 @@ var require_dist = __commonJS({
   }
 });
 
-// node_modules/.pnpm/@theatre+core@0.7.0/node_modules/@theatre/core/dist/index.js
+// node_modules/.pnpm/registry.npmmirror.com+@theatre+core@0.7.0/node_modules/@theatre/core/dist/index.js
 var require_dist2 = __commonJS({
-  "node_modules/.pnpm/@theatre+core@0.7.0/node_modules/@theatre/core/dist/index.js"(exports, module) {
+  "node_modules/.pnpm/registry.npmmirror.com+@theatre+core@0.7.0/node_modules/@theatre/core/dist/index.js"(exports, module) {
     var __create = Object.create;
     var __defProp = Object.defineProperty;
     var __defProps = Object.defineProperties;

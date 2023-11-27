@@ -6,7 +6,7 @@ import { ref, reactive, effect } from 'vue-core-reactivity'
 import {onMounted } from 'vue'
 import JSON_Demo1 from './demo1.json'
 import { createDrama, Zixian, createObjectActor, createZixian, createObjectInfoPanel } from 'zixian'
-
+import * as PIXI from 'pixi.js'
 const a = ref(0)
 const b = ref(0)
 effect(() => b.value = a.value + 1)
@@ -21,19 +21,19 @@ onMounted(() => {
     }
     const zx = createZixian(zixianRef.value)
 
-    // const pixelSizeX = zixianRef.value.clientWidth / 1000
-    // const pixelSizeY = zixianRef.value.clientHeight / 1000
+    const pixelSizeX = zixianRef.value.clientWidth / 1000
+    const pixelSizeY = zixianRef.value.clientHeight / 1000
 
-    // const windowData = {
-    //     width: zixianRef.value.clientWidth,
-    //     height: zixianRef.value.clientWidth,
-    // }
-    // const objectPanel = createObjectInfoPanel({
-    //     pixelSizeX,
-    //     width: windowData.width,
-    //     height: windowData.height
-    // })
-    // zx?.gui.addChild(objectPanel)
+    const windowData = {
+        width: zixianRef.value.clientWidth,
+        height: zixianRef.value.clientWidth,
+    }
+    const objectPanel = createObjectInfoPanel({
+        pixelSizeX,
+        width: windowData.width,
+        height: windowData.height
+    })
+    zx?.gui.addChild(objectPanel)
 
 
     // // if (!zx.renderer) return

@@ -1,38 +1,44 @@
 {
-  "hash": "6ed2b547",
-  "browserHash": "cc1d72dc",
+  "hash": "1605c3c1",
+  "browserHash": "f804baef",
   "optimized": {
     "vue": {
-      "src": "../../../../../node_modules/.pnpm/vue@3.3.7/node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "src": "../../../../../node_modules/.pnpm/registry.npmmirror.com+vue@3.3.9/node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "5ee7b3e7",
+      "fileHash": "c77da351",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
-      "src": "../../../../../node_modules/.pnpm/@vue+devtools-api@6.5.1/node_modules/@vue/devtools-api/lib/esm/index.js",
+      "src": "../../../../../node_modules/.pnpm/registry.npmmirror.com+@vue+devtools-api@6.5.1/node_modules/@vue/devtools-api/lib/esm/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "aa39543e",
+      "fileHash": "257b5d7b",
       "needsInterop": false
     },
     "@theme/index": {
-      "src": "../../../../../node_modules/.pnpm/vitepress@1.0.0-rc.24_@algolia+client-search@4.20.0_search-insights@2.11.0/node_modules/vitepress/dist/client/theme-default/index.js",
+      "src": "../../../../../node_modules/.pnpm/registry.npmmirror.com+vitepress@1.0.0-rc.24_@algolia+client-search@4.20.0_search-insights@2.11.0/node_modules/vitepress/dist/client/theme-default/index.js",
       "file": "@theme_index.js",
-      "fileHash": "45435d86",
+      "fileHash": "813e19a6",
+      "needsInterop": false
+    },
+    "pixi.js": {
+      "src": "../../../../../node_modules/.pnpm/registry.npmmirror.com+pixi.js@7.3.2_@pixi+utils@7.3.2/node_modules/pixi.js/lib/index.mjs",
+      "file": "pixi__js.js",
+      "fileHash": "902cd08a",
       "needsInterop": false
     },
     "@theatre/core": {
-      "src": "../../../../../node_modules/.pnpm/@theatre+core@0.7.0/node_modules/@theatre/core/dist/index.js",
+      "src": "../../../../../node_modules/.pnpm/registry.npmmirror.com+@theatre+core@0.7.0/node_modules/@theatre/core/dist/index.js",
       "file": "@theatre_core.js",
-      "fileHash": "718c4654",
+      "fileHash": "c36f7c24",
       "needsInterop": true
     }
   },
   "chunks": {
-    "chunk-EC7GVSDM": {
-      "file": "chunk-EC7GVSDM.js"
+    "chunk-FJYVN4DS": {
+      "file": "chunk-FJYVN4DS.js"
     },
-    "chunk-76J2PTFD": {
-      "file": "chunk-76J2PTFD.js"
+    "chunk-5WWUZCGV": {
+      "file": "chunk-5WWUZCGV.js"
     }
   }
 }
