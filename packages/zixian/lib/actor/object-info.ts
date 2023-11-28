@@ -1,19 +1,50 @@
 import { Panel } from '../gui'
 import {
-  ScrollBox
+  ScrollBox, ScrollBoxOptions
 } from '@pixi/ui'
-import { Texture, Sprite } from 'pixi.js'
+import { Texture, Sprite, Container, DisplayObject } from 'pixi.js'
 import stackItemBackImg from '../assets/BackTile_01.png'
 import scopeItemBackImg from '../assets/platformPack_tile021.png'
-import { ObjectActorIcon, IconActorOptions } from './object'
+import emoji from '../assets/intelligent-emoji.png'
+import { ObjectActorIcon } from './object'
+
+const boxtexture2 = Texture.from(stackItemBackImg);
+const boxtexture = Texture.from(scopeItemBackImg);
+const emojitexture = Texture.from(emoji)
 
 let _pixelSizeX = 1
 // let _pixelSizeY = 1
 
 const STACK_BOX_SIZE = 50
 
+class Stack extends ScrollBox {
+  constructor(params: ScrollBoxOptions) {
+    super(params)
+  }
+
+  createBox() {
+    const box = new Sprite(boxtexture2 as any);
+    box.width = this.width
+    box.height = this.width
+    return box
+  }
+
+  addItem<T extends Container<DisplayObject>[]>(...items: T): T[0] {
+      const container = new Container()
+      container.addChild(this.createBox())
+      items[0].width = this.width
+      items[0].height = this.width
+      items[0].x = 0
+      items[0].y = 0
+
+      container.addChild(...items)
+      
+      super.addItem(container)
+      return items[0]
+  }
+}
+
 function createStack({
-  boxSize = _pixelSizeX * STACK_BOX_SIZE,
   width,
   height
 }: {
@@ -21,32 +52,11 @@ function createStack({
   width: number
   height: number
 }) {
-  // Create a new texture
-  const boxtexture = Texture.from(stackItemBackImg);
-  const createBox = () => {
-    const box = new Sprite(boxtexture as any);
-    box.width = boxSize
-    box.height = boxSize
-    return box
-  }
-  const contextStack = new ScrollBox({
+  const contextStack = new Stack({
     background: 0XFFFFFF,
     width,
     height,
-    items: [
-      createBox(),
-      createBox(),
-      createBox(),
-      createBox(),
-      createBox(),
-      createBox(),
-      createBox(),
-      createBox(),
-      createBox(),
-      createBox(),
-      createBox(),
-      createBox(),
-    ],
+    items: [],
   });
 
   return contextStack
@@ -55,7 +65,6 @@ function createStack({
 function createScopeItems(itemsAmount: number): any[]
 {
     const items = [];
-    const boxtexture = Texture.from(scopeItemBackImg);
     const boxSize = STACK_BOX_SIZE
     const createBox = () => {
       const box = new Sprite(boxtexture as any);
@@ -69,6 +78,17 @@ function createScopeItems(itemsAmount: number): any[]
         const box = createBox()
         items.push(box);
     }
+
+    const container = new Container()
+    const d1 = new Sprite(boxtexture2)
+    d1.width = 70
+    d1.height = 70
+    const d2 = new Sprite(emojitexture) 
+    d2.width = 70
+    d2.height = 70
+    container.addChild(d1)
+    container.addChild(d2)
+    items.push(container)
 
     return items;
 }

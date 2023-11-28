@@ -1,8 +1,13 @@
 import { Panel } from '../gui';
-import { ScrollBox } from '@pixi/ui';
-import { IconActorOptions } from './object';
+import { ScrollBox, ScrollBoxOptions } from '@pixi/ui';
+import { Sprite, Container, DisplayObject } from 'pixi.js';
+declare class Stack extends ScrollBox {
+    constructor(params: ScrollBoxOptions);
+    createBox(): Sprite;
+    addItem<T extends Container<DisplayObject>[]>(...items: T): T[0];
+}
 declare class ObjectInfoPanel extends Panel {
-    stack: ScrollBox;
+    stack: Stack;
     scope: ScrollBox;
     code: Panel;
     private BOX_SIZE;
@@ -10,7 +15,9 @@ declare class ObjectInfoPanel extends Panel {
         width: number;
         height: number;
     });
-    addStack(config: IconActorOptions): void;
+    addStack(config: {
+        icon: string;
+    }): void;
 }
 export declare const createObjectInfoPanel: ({ width, height, pixelSizeX, }: {
     pixelSizeX: number;

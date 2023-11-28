@@ -1,3 +1,4 @@
+import { Graphics, Sprite } from 'pixi.js';
 import { Actor } from './actor';
 export type ActorOptions = {
     width: number;
@@ -8,10 +9,12 @@ export type ActorOptions = {
 export type IconActorOptions = ActorOptions & {
     icon: string;
 };
-declare class ObjectActor extends Actor {
+declare class ObjectActor implements Actor {
+    appearance: Graphics;
     constructor(options?: ActorOptions);
 }
-export declare class ObjectActorIcon extends Actor {
+export declare class ObjectActorIcon implements Actor {
+    appearance: Sprite;
     constructor({ width, height, x, y, icon }: IconActorOptions);
 }
 export declare const createObjectActor: (options?: ActorOptions) => ObjectActor;

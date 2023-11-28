@@ -1,38 +1,44 @@
 {
-  "hash": "8f575b77",
-  "browserHash": "f0205031",
+  "hash": "f0783fff",
+  "browserHash": "3e5e3ad3",
   "optimized": {
     "vue": {
-      "src": "../../../../../node_modules/.pnpm/registry.npmmirror.com+vue@3.3.7/node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "src": "../../../../../node_modules/.pnpm/registry.npmmirror.com+vue@3.3.9/node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "94a474e3",
+      "fileHash": "dbaad9fc",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../../../node_modules/.pnpm/registry.npmmirror.com+@vue+devtools-api@6.5.1/node_modules/@vue/devtools-api/lib/esm/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "55ae26d0",
+      "fileHash": "da9ef9f5",
       "needsInterop": false
     },
     "@theme/index": {
       "src": "../../../../../node_modules/.pnpm/registry.npmmirror.com+vitepress@1.0.0-rc.24_@algolia+client-search@4.20.0_search-insights@2.11.0/node_modules/vitepress/dist/client/theme-default/index.js",
       "file": "@theme_index.js",
-      "fileHash": "0cb7b3f5",
+      "fileHash": "805ee459",
+      "needsInterop": false
+    },
+    "pixi.js": {
+      "src": "../../../../../node_modules/.pnpm/registry.npmmirror.com+pixi.js@7.3.2_@pixi+utils@7.3.2/node_modules/pixi.js/lib/index.mjs",
+      "file": "pixi__js.js",
+      "fileHash": "11bb7bb0",
       "needsInterop": false
     },
     "@theatre/core": {
       "src": "../../../../../node_modules/.pnpm/registry.npmmirror.com+@theatre+core@0.7.0/node_modules/@theatre/core/dist/index.js",
       "file": "@theatre_core.js",
-      "fileHash": "87665a96",
+      "fileHash": "bab09e86",
       "needsInterop": true
     }
   },
   "chunks": {
-    "chunk-QKUWJFHX": {
-      "file": "chunk-QKUWJFHX.js"
+    "chunk-FJYVN4DS": {
+      "file": "chunk-FJYVN4DS.js"
     },
-    "chunk-76J2PTFD": {
-      "file": "chunk-76J2PTFD.js"
+    "chunk-5WWUZCGV": {
+      "file": "chunk-5WWUZCGV.js"
     }
   }
 }
